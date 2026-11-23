@@ -8,7 +8,9 @@ Serve this directory with any static file server and open `index.html`. The page
 
 ## Publishing
 
-The hosted Site uses `.openai/hosting.json` with `dist` as its static output directory. Copy `index.html`, `style.css`, `main.js`, `assets/`, `observe/`, `build/`, `community/`, and `app/` into `dist/` before packaging. Keep `dist/` generated rather than editing it directly. The Sites source checkout and the GitHub repository are separate remotes; mirror reviewed portal changes to both until an automated sync is established.
+The repository's `.github/workflows/pages.yml` publishes this directory to GitHub Pages when portal files land on `main`, or when the workflow is run manually. It prepares a clean artifact with `index.html` at its root. GitHub Pages must be enabled with **GitHub Actions** as its source in repository Settings → Pages; the workflow needs `pages: write` and `id-token: write`. Keep changes in `site/` and review them through pull requests.
+
+The earlier ChatGPT Sites deployment is separate. Its `.openai/hosting.json` and generated `dist/` are for that deployment and are not used by GitHub Pages.
 
 ## Next integration
 
