@@ -2,7 +2,7 @@
 
 An open-source, community-led project to document and investigate unusual sky sightings in the San Luis Valley, Colorado. We combine witness reports, historical records, and permitted public data. A persistent AI resident will help people examine evidence and ask better questions. Portable sensor pods can add synchronized observations when funding allows.
 
-**Status:** foundation and design. No public reporting service or resident is operating yet. [Contribute](CONTRIBUTING.md) by discussing the design or taking an issue.
+**Status:** the [public entry portal](https://slv-sky-observatory.orionsentinelai.chatgpt.site) is live. The reporting app and resident are in development; no public reporting service is operating yet. [Contribute](CONTRIBUTING.md) by discussing the design or taking an issue.
 
 ## What we are building
 
@@ -15,7 +15,7 @@ A pin marks the observer's location, **not a measured object location**. A sight
 
 ## Project layout
 
-`docs/architecture.md` describes components and boundaries. `docs/evidence-policy.md` defines how reports and conclusions are handled. `docs/roadmap.md` gives the first milestones. `docs/source-inventory.md` tracks candidate public sources and reuse from [Eagle Eyes Global](https://github.com/jkh2/Eagle-Eyes-Global). `schemas/report.schema.json` is an initial draft of the report contract.
+`site/` contains the static entry portal with separate observer and builder onboarding. `docs/architecture.md` describes components and boundaries. `docs/evidence-policy.md` defines how reports and conclusions are handled. `docs/roadmap.md` gives the first milestones. `docs/source-inventory.md` tracks candidate public sources and reuse from [Eagle Eyes Global](https://github.com/jkh2/Eagle-Eyes-Global). `schemas/report.schema.json` is an initial draft of the report contract.
 
 We are starting with documentation and issue-sized implementation. The app and resident services will be added as working vertical slices; directories will appear when they contain code.
 
