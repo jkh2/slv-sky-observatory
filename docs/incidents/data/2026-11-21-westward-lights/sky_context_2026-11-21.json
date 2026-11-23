@@ -1,0 +1,1138 @@
+{
+  "calculation_point": {
+    "note": "Public Alamosa-area reference used for ephemeris only; not an exact observer coordinate.",
+    "lat_deg": 37.47,
+    "lon_deg": -105.87,
+    "elev_m": 2300.0,
+    "west_az_window_deg": [
+      200.0,
+      320.0
+    ]
+  },
+  "computed_at_mst": "2026-11-22 20:26:29 MST",
+  "event_time_mst": "2026-11-21 20:15:00 MST",
+  "event_time_utc": "2026-11-22 03:15:00Z",
+  "sun_twilight_mst": {
+    "sunset (sun alt 0\u00b0)": "2026-11-21 16:44:21 MST",
+    "end of civil twilight": "2026-11-21 17:17:15 MST",
+    "end of nautical twilight": "2026-11-21 17:49:08 MST",
+    "end of astronomical twilight": "2026-11-21 18:20:18 MST"
+  },
+  "sun_rise_set": [
+    {
+      "kind": "sunset",
+      "mst": "2026-11-21 16:47:31 MST",
+      "utc": "2026-11-21T23:47:31Z"
+    }
+  ],
+  "horizon_estimate": [
+    {
+      "feature": "Bennett Peak (approx. published summit)",
+      "distance_km": 49.8,
+      "azimuth_deg": 271.8,
+      "approx_geometric_elevation_deg": 1.76,
+      "note": "Rough geometry only (haversine + Earth curvature; no refraction). Peak coords are published summit approximations."
+    },
+    {
+      "feature": "Conejos Peak (approx. published summit)",
+      "distance_km": 65.2,
+      "azimuth_deg": 252.1,
+      "approx_geometric_elevation_deg": 1.22,
+      "note": "Rough geometry only (haversine + Earth curvature; no refraction). Peak coords are published summit approximations."
+    }
+  ],
+  "objects_at_times": {
+    "19:45": [
+      {
+        "name": "Sun",
+        "kind": "sun",
+        "az": 270.21,
+        "alt": -34.69,
+        "mag": null
+      },
+      {
+        "name": "Moon",
+        "kind": "moon",
+        "az": 129.09,
+        "alt": 56.75,
+        "mag": null,
+        "illuminated_fraction": null
+      },
+      {
+        "name": "Saturn",
+        "kind": "planet",
+        "az": 160.19,
+        "alt": 51.73,
+        "mag": 0.56
+      },
+      {
+        "name": "Vega",
+        "kind": "star",
+        "az": 297.25,
+        "alt": 31.33,
+        "mag": 0.03
+      },
+      {
+        "name": "Altair",
+        "kind": "star",
+        "az": 257.23,
+        "alt": 30.3,
+        "mag": 0.76
+      },
+      {
+        "name": "Deneb",
+        "kind": "star",
+        "az": 297.95,
+        "alt": 55.18,
+        "mag": 1.25
+      },
+      {
+        "name": "Capella",
+        "kind": "star",
+        "az": 52.92,
+        "alt": 30.21,
+        "mag": 0.08
+      },
+      {
+        "name": "Rigel",
+        "kind": "star",
+        "az": 101.05,
+        "alt": 0.94,
+        "mag": 0.13
+      },
+      {
+        "name": "Betelgeuse",
+        "kind": "star",
+        "az": 82.49,
+        "alt": 2.39,
+        "mag": 0.5
+      },
+      {
+        "name": "Aldebaran",
+        "kind": "star",
+        "az": 86.59,
+        "alt": 23.41,
+        "mag": 0.85
+      },
+      {
+        "name": "Fomalhaut",
+        "kind": "star",
+        "az": 191.0,
+        "alt": 22.16,
+        "mag": 1.16
+      }
+    ],
+    "20:00": [
+      {
+        "name": "Sun",
+        "kind": "sun",
+        "az": 272.54,
+        "alt": -37.66,
+        "mag": null
+      },
+      {
+        "name": "Moon",
+        "kind": "moon",
+        "az": 134.33,
+        "alt": 58.98,
+        "mag": null,
+        "illuminated_fraction": null
+      },
+      {
+        "name": "Saturn",
+        "kind": "planet",
+        "az": 166.16,
+        "alt": 52.59,
+        "mag": 0.56
+      },
+      {
+        "name": "Vega",
+        "kind": "star",
+        "az": 298.73,
+        "alt": 28.7,
+        "mag": 0.03
+      },
+      {
+        "name": "Altair",
+        "kind": "star",
+        "az": 259.84,
+        "alt": 27.37,
+        "mag": 0.76
+      },
+      {
+        "name": "Deneb",
+        "kind": "star",
+        "az": 298.31,
+        "alt": 52.54,
+        "mag": 1.25
+      },
+      {
+        "name": "Capella",
+        "kind": "star",
+        "az": 54.12,
+        "alt": 32.61,
+        "mag": 0.08
+      },
+      {
+        "name": "Rigel",
+        "kind": "star",
+        "az": 103.37,
+        "alt": 3.86,
+        "mag": 0.13
+      },
+      {
+        "name": "Betelgeuse",
+        "kind": "star",
+        "az": 84.76,
+        "alt": 5.36,
+        "mag": 0.5
+      },
+      {
+        "name": "Aldebaran",
+        "kind": "star",
+        "az": 88.82,
+        "alt": 26.39,
+        "mag": 0.85
+      },
+      {
+        "name": "Fomalhaut",
+        "kind": "star",
+        "az": 194.45,
+        "alt": 21.5,
+        "mag": 1.16
+      }
+    ],
+    "20:15": [
+      {
+        "name": "Sun",
+        "kind": "sun",
+        "az": 274.98,
+        "alt": -40.63,
+        "mag": null
+      },
+      {
+        "name": "Moon",
+        "kind": "moon",
+        "az": 140.2,
+        "alt": 61.01,
+        "mag": null,
+        "illuminated_fraction": 0.915
+      },
+      {
+        "name": "Saturn",
+        "kind": "planet",
+        "az": 172.32,
+        "alt": 53.15,
+        "mag": 0.56
+      },
+      {
+        "name": "Vega",
+        "kind": "star",
+        "az": 300.25,
+        "alt": 26.1,
+        "mag": 0.03
+      },
+      {
+        "name": "Altair",
+        "kind": "star",
+        "az": 262.35,
+        "alt": 24.42,
+        "mag": 0.76
+      },
+      {
+        "name": "Deneb",
+        "kind": "star",
+        "az": 298.82,
+        "alt": 49.92,
+        "mag": 1.25
+      },
+      {
+        "name": "Capella",
+        "kind": "star",
+        "az": 55.25,
+        "alt": 35.05,
+        "mag": 0.08
+      },
+      {
+        "name": "Rigel",
+        "kind": "star",
+        "az": 105.72,
+        "alt": 6.75,
+        "mag": 0.13
+      },
+      {
+        "name": "Betelgeuse",
+        "kind": "star",
+        "az": 87.02,
+        "alt": 8.34,
+        "mag": 0.5
+      },
+      {
+        "name": "Aldebaran",
+        "kind": "star",
+        "az": 91.1,
+        "alt": 29.38,
+        "mag": 0.85
+      },
+      {
+        "name": "Pollux",
+        "kind": "star",
+        "az": 54.56,
+        "alt": 0.82,
+        "mag": 1.14
+      },
+      {
+        "name": "Fomalhaut",
+        "kind": "star",
+        "az": 197.84,
+        "alt": 20.67,
+        "mag": 1.16
+      }
+    ],
+    "20:30": [
+      {
+        "name": "Sun",
+        "kind": "sun",
+        "az": 277.55,
+        "alt": -43.59,
+        "mag": null
+      },
+      {
+        "name": "Moon",
+        "kind": "moon",
+        "az": 146.76,
+        "alt": 62.8,
+        "mag": null,
+        "illuminated_fraction": null
+      },
+      {
+        "name": "Saturn",
+        "kind": "planet",
+        "az": 178.6,
+        "alt": 53.38,
+        "mag": 0.56
+      },
+      {
+        "name": "Vega",
+        "kind": "star",
+        "az": 301.83,
+        "alt": 23.54,
+        "mag": 0.03
+      },
+      {
+        "name": "Altair",
+        "kind": "star",
+        "az": 264.78,
+        "alt": 21.46,
+        "mag": 0.76
+      },
+      {
+        "name": "Fomalhaut",
+        "kind": "star",
+        "az": 201.17,
+        "alt": 19.67,
+        "mag": 1.16
+      },
+      {
+        "name": "Deneb",
+        "kind": "star",
+        "az": 299.46,
+        "alt": 47.32,
+        "mag": 1.25
+      },
+      {
+        "name": "Capella",
+        "kind": "star",
+        "az": 56.31,
+        "alt": 37.51,
+        "mag": 0.08
+      },
+      {
+        "name": "Rigel",
+        "kind": "star",
+        "az": 108.14,
+        "alt": 9.6,
+        "mag": 0.13
+      },
+      {
+        "name": "Betelgeuse",
+        "kind": "star",
+        "az": 89.29,
+        "alt": 11.32,
+        "mag": 0.5
+      },
+      {
+        "name": "Aldebaran",
+        "kind": "star",
+        "az": 93.46,
+        "alt": 32.36,
+        "mag": 0.85
+      },
+      {
+        "name": "Pollux",
+        "kind": "star",
+        "az": 56.79,
+        "alt": 3.28,
+        "mag": 1.14
+      }
+    ],
+    "20:45": [
+      {
+        "name": "Sun",
+        "kind": "sun",
+        "az": 280.29,
+        "alt": -46.53,
+        "mag": null
+      },
+      {
+        "name": "Moon",
+        "kind": "moon",
+        "az": 154.03,
+        "alt": 64.3,
+        "mag": null,
+        "illuminated_fraction": null
+      },
+      {
+        "name": "Saturn",
+        "kind": "planet",
+        "az": 184.89,
+        "alt": 53.29,
+        "mag": 0.56
+      },
+      {
+        "name": "Vega",
+        "kind": "star",
+        "az": 303.46,
+        "alt": 21.03,
+        "mag": 0.03
+      },
+      {
+        "name": "Altair",
+        "kind": "star",
+        "az": 267.15,
+        "alt": 18.48,
+        "mag": 0.76
+      },
+      {
+        "name": "Fomalhaut",
+        "kind": "star",
+        "az": 204.41,
+        "alt": 18.52,
+        "mag": 1.16
+      },
+      {
+        "name": "Deneb",
+        "kind": "star",
+        "az": 300.2,
+        "alt": 44.73,
+        "mag": 1.25
+      },
+      {
+        "name": "Capella",
+        "kind": "star",
+        "az": 57.28,
+        "alt": 40.01,
+        "mag": 0.08
+      },
+      {
+        "name": "Rigel",
+        "kind": "star",
+        "az": 110.62,
+        "alt": 12.42,
+        "mag": 0.13
+      },
+      {
+        "name": "Betelgeuse",
+        "kind": "star",
+        "az": 91.59,
+        "alt": 14.3,
+        "mag": 0.5
+      },
+      {
+        "name": "Aldebaran",
+        "kind": "star",
+        "az": 95.92,
+        "alt": 35.33,
+        "mag": 0.85
+      },
+      {
+        "name": "Pollux",
+        "kind": "star",
+        "az": 58.95,
+        "alt": 5.81,
+        "mag": 1.14
+      }
+    ]
+  },
+  "western_at_2015": [
+    {
+      "name": "Deneb",
+      "kind": "star",
+      "az": 298.82,
+      "alt": 49.92,
+      "mag": 1.25
+    },
+    {
+      "name": "Vega",
+      "kind": "star",
+      "az": 300.25,
+      "alt": 26.1,
+      "mag": 0.03
+    },
+    {
+      "name": "Altair",
+      "kind": "star",
+      "az": 262.35,
+      "alt": 24.42,
+      "mag": 0.76
+    }
+  ],
+  "sidereal_and_planet_drift": {
+    "Venus": [
+      {
+        "date": "2026-08-01",
+        "az": 264.09,
+        "alt": 10.56,
+        "mag": -4.28,
+        "in_west_window": true
+      },
+      {
+        "date": "2026-08-07",
+        "az": 262.07,
+        "alt": 8.34,
+        "mag": -4.34,
+        "in_west_window": true
+      },
+      {
+        "date": "2026-10-01",
+        "az": 258.56,
+        "alt": -20.43,
+        "mag": -4.77,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-10-07",
+        "az": 261.96,
+        "alt": -25.6,
+        "mag": -4.63,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-11-21",
+        "az": 324.87,
+        "alt": -57.35,
+        "mag": -4.9,
+        "in_west_window": false
+      }
+    ],
+    "Mars": [
+      {
+        "date": "2026-08-01",
+        "az": 349.91,
+        "alt": -28.45,
+        "mag": 1.3,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-08-07",
+        "az": 351.53,
+        "alt": -28.44,
+        "mag": 1.29,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-10-01",
+        "az": 9.73,
+        "alt": -31.29,
+        "mag": 1.1,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-10-07",
+        "az": 12.38,
+        "alt": -31.64,
+        "mag": 1.06,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-11-21",
+        "az": 37.28,
+        "alt": -30.09,
+        "mag": 0.6,
+        "in_west_window": false
+      }
+    ],
+    "Jupiter": [
+      {
+        "date": "2026-08-01",
+        "az": 306.36,
+        "alt": -12.77,
+        "mag": -1.78,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-08-07",
+        "az": 309.48,
+        "alt": -15.88,
+        "mag": -1.78,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-10-01",
+        "az": 349.61,
+        "alt": -36.46,
+        "mag": -1.88,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-10-07",
+        "az": 355.43,
+        "alt": -37.28,
+        "mag": -1.9,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-11-21",
+        "az": 39.98,
+        "alt": -29.29,
+        "mag": -2.13,
+        "in_west_window": false
+      }
+    ],
+    "Saturn": [
+      {
+        "date": "2026-08-01",
+        "az": 67.21,
+        "alt": -21.73,
+        "mag": 0.63,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-08-07",
+        "az": 71.5,
+        "alt": -17.32,
+        "mag": 0.6,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-10-01",
+        "az": 109.21,
+        "alt": 26.32,
+        "mag": 0.34,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-10-07",
+        "az": 114.25,
+        "alt": 30.88,
+        "mag": 0.35,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-11-21",
+        "az": 172.32,
+        "alt": 53.15,
+        "mag": 0.56,
+        "in_west_window": false
+      }
+    ],
+    "Moon": [
+      {
+        "date": "2026-08-01",
+        "az": 87.29,
+        "alt": -7.73,
+        "mag": null,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-08-07",
+        "az": 8.85,
+        "alt": -25.47,
+        "mag": null,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-10-01",
+        "az": 46.74,
+        "alt": -7.81,
+        "mag": null,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-10-07",
+        "az": 325.92,
+        "alt": -42.18,
+        "mag": null,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-11-21",
+        "az": 140.2,
+        "alt": 61.01,
+        "mag": null,
+        "in_west_window": false
+      }
+    ],
+    "Fomalhaut": [
+      {
+        "date": "2026-08-01",
+        "az": 113.57,
+        "alt": -18.26,
+        "mag": 1.16,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-08-07",
+        "az": 116.6,
+        "alt": -14.01,
+        "mag": 1.16,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-10-01",
+        "az": 152.0,
+        "alt": 17.02,
+        "mag": 1.16,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-10-07",
+        "az": 156.98,
+        "alt": 19.04,
+        "mag": 1.16,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-11-21",
+        "az": 197.84,
+        "alt": 20.67,
+        "mag": 1.16,
+        "in_west_window": false
+      }
+    ],
+    "Altair": [
+      {
+        "date": "2026-08-01",
+        "az": 113.88,
+        "alt": 40.89,
+        "mag": 0.76,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-08-07",
+        "az": 119.45,
+        "alt": 45.09,
+        "mag": 0.76,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-10-01",
+        "az": 210.46,
+        "alt": 58.13,
+        "mag": 0.76,
+        "in_west_window": true
+      },
+      {
+        "date": "2026-10-07",
+        "az": 219.92,
+        "alt": 55.42,
+        "mag": 0.76,
+        "in_west_window": true
+      },
+      {
+        "date": "2026-11-21",
+        "az": 262.35,
+        "alt": 24.42,
+        "mag": 0.76,
+        "in_west_window": true
+      }
+    ],
+    "Deneb": [
+      {
+        "date": "2026-08-01",
+        "az": 60.59,
+        "alt": 47.46,
+        "mag": 1.25,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-08-07",
+        "az": 61.53,
+        "alt": 51.57,
+        "mag": 1.25,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-10-01",
+        "az": 344.38,
+        "alt": 81.75,
+        "mag": 1.25,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-10-07",
+        "az": 322.25,
+        "alt": 79.58,
+        "mag": 1.25,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-11-21",
+        "az": 298.82,
+        "alt": 49.92,
+        "mag": 1.25,
+        "in_west_window": true
+      }
+    ],
+    "Vega": [
+      {
+        "date": "2026-08-01",
+        "az": 78.23,
+        "alt": 69.7,
+        "mag": 0.03,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-08-07",
+        "az": 78.97,
+        "alt": 74.3,
+        "mag": 0.03,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-10-01",
+        "az": 283.55,
+        "alt": 63.16,
+        "mag": 0.03,
+        "in_west_window": true
+      },
+      {
+        "date": "2026-10-07",
+        "az": 285.06,
+        "alt": 58.61,
+        "mag": 0.03,
+        "in_west_window": true
+      },
+      {
+        "date": "2026-11-21",
+        "az": 300.25,
+        "alt": 26.1,
+        "mag": 0.03,
+        "in_west_window": true
+      }
+    ],
+    "Antares": [
+      {
+        "date": "2026-08-01",
+        "az": 185.82,
+        "alt": 25.8,
+        "mag": 1.09,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-08-07",
+        "az": 191.63,
+        "alt": 25.09,
+        "mag": 1.09,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-10-01",
+        "az": 234.85,
+        "alt": 1.02,
+        "mag": 1.09,
+        "in_west_window": true
+      },
+      {
+        "date": "2026-10-07",
+        "az": 238.41,
+        "alt": -2.9,
+        "mag": 1.09,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-11-21",
+        "az": 261.97,
+        "alt": -35.84,
+        "mag": 1.09,
+        "in_west_window": false
+      }
+    ],
+    "Arcturus": [
+      {
+        "date": "2026-08-01",
+        "az": 252.84,
+        "alt": 51.12,
+        "mag": -0.05,
+        "in_west_window": true
+      },
+      {
+        "date": "2026-08-07",
+        "az": 257.8,
+        "alt": 46.58,
+        "mag": -0.05,
+        "in_west_window": true
+      },
+      {
+        "date": "2026-10-01",
+        "az": 290.81,
+        "alt": 4.28,
+        "mag": -0.05,
+        "in_west_window": true
+      },
+      {
+        "date": "2026-10-07",
+        "az": 294.34,
+        "alt": -0.05,
+        "mag": -0.05,
+        "in_west_window": false
+      },
+      {
+        "date": "2026-11-21",
+        "az": 327.82,
+        "alt": -26.72,
+        "mag": -0.05,
+        "in_west_window": false
+      }
+    ]
+  },
+  "satellite_passes": {
+    "iss_stations_alt_ge_10_sunlit": [],
+    "visual_alt_ge_10_sunlit_west": [
+      {
+        "name": "THOR AGENA D R/B",
+        "start_mst": "20:00:00",
+        "end_mst": "20:01:15",
+        "max_alt_deg": 17.6,
+        "az_at_max_deg": 308.7,
+        "time_at_max_mst": "20:00:00",
+        "in_west_at_max": true,
+        "min_az": 308.7,
+        "max_az": 319.4
+      },
+      {
+        "name": "SL-16 R/B",
+        "start_mst": "20:00:00",
+        "end_mst": "20:00:15",
+        "max_alt_deg": 10.4,
+        "az_at_max_deg": 283.3,
+        "time_at_max_mst": "20:00:00",
+        "in_west_at_max": true,
+        "min_az": 283.3,
+        "max_az": 286.5
+      },
+      {
+        "name": "SL-8 R/B",
+        "start_mst": "20:12:00",
+        "end_mst": "20:13:30",
+        "max_alt_deg": 16.4,
+        "az_at_max_deg": 266.2,
+        "time_at_max_mst": "20:13:30",
+        "in_west_at_max": true,
+        "min_az": 250.9,
+        "max_az": 266.2
+      },
+      {
+        "name": "OAO 3 (COPERNICUS)",
+        "start_mst": "20:12:15",
+        "end_mst": "20:12:30",
+        "max_alt_deg": 12.6,
+        "az_at_max_deg": 263.3,
+        "time_at_max_mst": "20:12:30",
+        "in_west_at_max": true,
+        "min_az": 263.3,
+        "max_az": 263.8
+      },
+      {
+        "name": "SL-16 R/B",
+        "start_mst": "20:25:30",
+        "end_mst": "20:27:30",
+        "max_alt_deg": 16.9,
+        "az_at_max_deg": 282.9,
+        "time_at_max_mst": "20:27:30",
+        "in_west_at_max": true,
+        "min_az": 282.9,
+        "max_az": 302.6
+      }
+    ],
+    "visual_alt_ge_10_sunlit_all_az": [
+      {
+        "name": "THOR AGENA D R/B",
+        "start_mst": "20:00:00",
+        "end_mst": "20:01:30",
+        "max_alt_deg": 17.6,
+        "az_at_max_deg": 308.7,
+        "time_at_max_mst": "20:00:00",
+        "in_west_at_max": true,
+        "min_az": 308.7,
+        "max_az": 321.0
+      },
+      {
+        "name": "SL-16 R/B",
+        "start_mst": "20:00:00",
+        "end_mst": "20:00:15",
+        "max_alt_deg": 10.4,
+        "az_at_max_deg": 283.3,
+        "time_at_max_mst": "20:00:00",
+        "in_west_at_max": true,
+        "min_az": 283.3,
+        "max_az": 286.5
+      },
+      {
+        "name": "SL-8 R/B",
+        "start_mst": "20:12:00",
+        "end_mst": "20:13:30",
+        "max_alt_deg": 16.4,
+        "az_at_max_deg": 266.2,
+        "time_at_max_mst": "20:13:30",
+        "in_west_at_max": true,
+        "min_az": 250.9,
+        "max_az": 266.2
+      },
+      {
+        "name": "OAO 3 (COPERNICUS)",
+        "start_mst": "20:12:15",
+        "end_mst": "20:12:30",
+        "max_alt_deg": 12.6,
+        "az_at_max_deg": 263.3,
+        "time_at_max_mst": "20:12:30",
+        "in_west_at_max": true,
+        "min_az": 263.3,
+        "max_az": 263.8
+      },
+      {
+        "name": "SL-16 R/B",
+        "start_mst": "20:25:30",
+        "end_mst": "20:27:30",
+        "max_alt_deg": 16.9,
+        "az_at_max_deg": 282.9,
+        "time_at_max_mst": "20:27:30",
+        "in_west_at_max": true,
+        "min_az": 282.9,
+        "max_az": 302.6
+      }
+    ],
+    "starlink_alt_ge_10_sunlit_west": [],
+    "starlink_alt_ge_15_sunlit_all_az_count": 0,
+    "starlink_alt_ge_15_sunlit_all_az_top": [],
+    "starlink_west_trains_by_start_minute": [],
+    "starlink_allaz15_trains_by_start_minute": []
+  },
+  "tle_epochs": [
+    {
+      "label": "CelesTrak GROUP=visual",
+      "n": 156,
+      "epoch_min": "2026-11-19T13:03:33.055756+00:00",
+      "epoch_max": "2026-11-22T21:02:25.971924+00:00",
+      "epoch_median": "2026-11-22T13:53:45.456573+00:00"
+    },
+    {
+      "label": "CelesTrak GROUP=stations",
+      "n": 13,
+      "epoch_min": "2026-11-22T02:15:19.285339+00:00",
+      "epoch_max": "2026-11-22T18:08:25.672424+00:00",
+      "epoch_median": "2026-11-22T13:24:24.463867+00:00"
+    },
+    {
+      "label": "CelesTrak GROUP=starlink",
+      "n": 10593,
+      "epoch_min": "2026-11-19T00:17:19.695251+00:00",
+      "epoch_max": "2026-11-22T22:00:03.000092+00:00",
+      "epoch_median": "2026-11-22T07:59:41.919647+00:00"
+    }
+  ],
+  "moon_phase_at_2015": {
+    "phase_angle_deg_0_new_180_full": 146.1,
+    "illuminated_fraction": 0.915
+  },
+  "all_bright_up_at_2015": [
+    {
+      "name": "Moon",
+      "kind": "moon",
+      "az": 140.2,
+      "alt": 61.01,
+      "mag": null,
+      "illuminated_fraction": 0.915
+    },
+    {
+      "name": "Saturn",
+      "kind": "planet",
+      "az": 172.32,
+      "alt": 53.15,
+      "mag": 0.56
+    },
+    {
+      "name": "Deneb",
+      "kind": "star",
+      "az": 298.82,
+      "alt": 49.92,
+      "mag": 1.25
+    },
+    {
+      "name": "Capella",
+      "kind": "star",
+      "az": 55.25,
+      "alt": 35.05,
+      "mag": 0.08
+    },
+    {
+      "name": "Aldebaran",
+      "kind": "star",
+      "az": 91.1,
+      "alt": 29.38,
+      "mag": 0.85
+    },
+    {
+      "name": "Vega",
+      "kind": "star",
+      "az": 300.25,
+      "alt": 26.1,
+      "mag": 0.03
+    },
+    {
+      "name": "Altair",
+      "kind": "star",
+      "az": 262.35,
+      "alt": 24.42,
+      "mag": 0.76
+    },
+    {
+      "name": "Fomalhaut",
+      "kind": "star",
+      "az": 197.84,
+      "alt": 20.67,
+      "mag": 1.16
+    },
+    {
+      "name": "Betelgeuse",
+      "kind": "star",
+      "az": 87.02,
+      "alt": 8.34,
+      "mag": 0.5
+    },
+    {
+      "name": "Rigel",
+      "kind": "star",
+      "az": 105.72,
+      "alt": 6.75,
+      "mag": 0.13
+    },
+    {
+      "name": "Pollux",
+      "kind": "star",
+      "az": 54.56,
+      "alt": 0.82,
+      "mag": 1.14
+    }
+  ],
+  "sidereal_rate": {
+    "minutes_earlier_per_day": 3.933,
+    "aug1_to_nov21_days": 112,
+    "aug1_to_nov21_shift_hours": 7.34,
+    "oct1_to_nov21_days": 51,
+    "oct1_to_nov21_shift_hours": 3.34,
+    "note": "A fixed star at a given azimuth at 20:15 MST on date D appears at that same azimuth ~3m56s earlier each following day. Over months the clock time of a given star-azimuth therefore slides earlier by hours, so a star cannot remain at 20:15 from August or October through 21 November."
+  },
+  "tle_retrieved_mst": "2026-11-22 20:26:29 MST",
+  "tle_caveat": "TLEs were downloaded on 22 Nov 2026 (America/Denver) and propagated backward to 21 Nov 2026 20:00\u201320:30 MST (~24 hours earlier than the retrieval). ISS/visual-sat errors over one day are typically a few km (small in sky angle if the pass is high), but Starlink spacecraft maneuver often, so a reconstruction from later TLEs can miss, add, or time-shift trains. This is not a substitute for epoch-matched historical TLEs."
+}

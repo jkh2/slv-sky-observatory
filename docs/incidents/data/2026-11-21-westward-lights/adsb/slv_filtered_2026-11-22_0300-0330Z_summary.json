@@ -1,0 +1,3066 @@
+{
+  "dataset": {
+    "name": "adsblol/globe_history_2026",
+    "release": "v2026.11.22-planes-readsb-prod-0",
+    "url": "https://github.com/adsblol/globe_history_2026/releases/tag/v2026.11.22-planes-readsb-prod-0",
+    "license": "ODbL 1.0",
+    "license_url": "https://opendatacommons.org/licenses/odbl/1.0/"
+  },
+  "method": {
+    "time_window_utc": [
+      "2026-11-22 03:00:00 UTC",
+      "2026-11-22 03:30:00 UTC"
+    ],
+    "time_window_mst": [
+      "2026-11-21 20:00:00 MST",
+      "2026-11-21 20:30:00 MST"
+    ],
+    "bbox_lat": [
+      37.0,
+      38.3
+    ],
+    "bbox_lon": [
+      -106.7,
+      -105.3
+    ],
+    "alamosa_reference": {
+      "name": "alamosa_reference",
+      "lat": 37.47,
+      "lon": -105.87,
+      "elev_m": 2300.0,
+      "note": "Public Alamosa-area reference used for az/el; not an observer pin."
+    },
+    "approx_observer_east_us160": {
+      "name": "approx_observer_east_us160",
+      "lat": 37.47,
+      "lon": -105.8,
+      "elev_m": 2300.0,
+      "note": "Approximate area only: east of Alamosa on US-160, looking west. Not a measured witness coordinate."
+    },
+    "junction_us160_co17": {
+      "name": "us160_co17_loaf_n_jug_area",
+      "lat": 37.47358,
+      "lon": -105.856805,
+      "elev_m": 2300.0,
+      "note": "Public commercial/park junction (Loaf 'N Jug / Rio Grande Farm Park area). Approximate public coordinates."
+    },
+    "junction_bearing_from_approx_observer_deg": 274.5,
+    "junction_distance_from_approx_observer_km": 5.04,
+    "west_azimuth_window_deg": [
+      200.0,
+      320.0
+    ],
+    "low_elevation_threshold_deg": 10.0,
+    "near_junction_bearing_threshold_deg": 15.0,
+    "geometry": "WGS84 ECEF to ENU; no atmospheric refraction. Geometric altitude preferred when present in the trace; otherwise barometric altitude (pressure altitude, not true height).",
+    "trace_time": "Absolute time = JSON 'timestamp' (unix seconds) + per-point offset seconds, per readsb README-json.md.",
+    "coverage_caveat": "This is a volunteer ADS-B/MLAT archive. Aircraft without a transponder, with ADS-B off, or outside receiver coverage (including some military flights) may be absent. Absence of a trace is not evidence that no aircraft was present."
+  },
+  "scan": {
+    "tar_members_seen": 59582,
+    "trace_files_scanned": 59269,
+    "parse_failures": 0,
+    "trace_files_without_match": 59248,
+    "matching_aircraft": 21
+  },
+  "aircraft": [
+    {
+      "hex": "acd64b",
+      "registration": "N926UW",
+      "type": "A321",
+      "type_desc": "AIRBUS A-321",
+      "callsigns": [
+        "AAL2375"
+      ],
+      "dbFlags": 0,
+      "military_dbFlag": false,
+      "ladd_dbFlag": false,
+      "pia_dbFlag": false,
+      "non_icao_hex": false,
+      "position_sources": [
+        "adsb_icao"
+      ],
+      "mlat_only": false,
+      "mlat_present": false,
+      "squawks": [
+        "0527"
+      ],
+      "categories": [
+        "A3"
+      ],
+      "no_callsign": false,
+      "n_points_in_window_and_bbox": 30,
+      "time_first_mst": "2026-11-21 20:00:10 MST",
+      "time_last_mst": "2026-11-21 20:11:04 MST",
+      "time_first_utc": "2026-11-22 03:00:10 UTC",
+      "time_last_utc": "2026-11-22 03:11:04 UTC",
+      "duration_s": 654.2,
+      "altitude_ft": {
+        "min": 32000.0,
+        "max": 32300.0,
+        "median": 32250.0
+      },
+      "ground_track_deg": {
+        "min": 303.0,
+        "max": 304.0,
+        "median": 303.6
+      },
+      "ground_speed_kt": {
+        "min": 411.6,
+        "max": 418.0,
+        "median": 416.9
+      },
+      "altitude_kinds": [
+        "baro_alt",
+        "geom_alt"
+      ],
+      "from_alamosa_reference": {
+        "n_with_geometry": 30,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 9.4,
+          "max": 353.1,
+          "median": 312.3
+        },
+        "el_deg": {
+          "min": 4.07,
+          "max": 35.92,
+          "median": 13.23
+        },
+        "range_km": {
+          "min": 12.8,
+          "max": 95.1,
+          "median": 35.2
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:03:45 MST",
+          "time_utc": "2026-11-22 03:03:45 UTC",
+          "az_deg": 31.1,
+          "el_deg": 35.92,
+          "range_km": 12.8,
+          "alt_ft": 32250,
+          "in_west": false,
+          "low_elev": false
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:03:45 MST",
+          "time_utc": "2026-11-22 03:03:45 UTC",
+          "az_deg": 31.1,
+          "el_deg": 35.92,
+          "range_km": 12.8,
+          "alt_ft": 32250,
+          "in_west": false,
+          "low_elev": false
+        }
+      },
+      "from_approx_observer_east_us160": {
+        "n_with_geometry": 30,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 22.1,
+          "max": 354.7,
+          "median": 309.8
+        },
+        "el_deg": {
+          "min": 3.83,
+          "max": 46.76,
+          "median": 13.21
+        },
+        "range_km": {
+          "min": 10.3,
+          "max": 100.0,
+          "median": 33.4
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:03:25 MST",
+          "time_utc": "2026-11-22 03:03:25 UTC",
+          "az_deg": 22.1,
+          "el_deg": 46.76,
+          "range_km": 10.3,
+          "alt_ft": 32250,
+          "in_west": false,
+          "low_elev": false
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:03:25 MST",
+          "time_utc": "2026-11-22 03:03:25 UTC",
+          "az_deg": 22.1,
+          "el_deg": 46.76,
+          "range_km": 10.3,
+          "alt_ft": 32250,
+          "in_west": false,
+          "low_elev": false
+        },
+        "any_near_junction_bearing_15deg": false,
+        "min_az_sep_from_junction_bearing_deg": 33.1,
+        "at_min_az_sep": {
+          "time_mst": "2026-11-21 20:11:04 MST",
+          "az_deg": 307.6,
+          "el_deg": 3.83,
+          "range_km": 100.0,
+          "alt_ft": 32000,
+          "in_west": true,
+          "low_elev": true
+        }
+      }
+    },
+    {
+      "hex": "a07dc9",
+      "registration": "N13014",
+      "type": "B78X",
+      "type_desc": "BOEING 787-10 Dreamliner",
+      "callsigns": [
+        "UAL353"
+      ],
+      "dbFlags": 0,
+      "military_dbFlag": false,
+      "ladd_dbFlag": false,
+      "pia_dbFlag": false,
+      "non_icao_hex": false,
+      "position_sources": [
+        "adsb_icao"
+      ],
+      "mlat_only": false,
+      "mlat_present": false,
+      "squawks": [
+        "1517"
+      ],
+      "categories": [
+        "A5"
+      ],
+      "no_callsign": false,
+      "n_points_in_window_and_bbox": 30,
+      "time_first_mst": "2026-11-21 20:01:26 MST",
+      "time_last_mst": "2026-11-21 20:10:59 MST",
+      "time_first_utc": "2026-11-22 03:01:26 UTC",
+      "time_last_utc": "2026-11-22 03:10:59 UTC",
+      "duration_s": 573.1,
+      "altitude_ft": {
+        "min": 38200.0,
+        "max": 38250.0,
+        "median": 38225.0
+      },
+      "ground_track_deg": {
+        "min": 254.0,
+        "max": 254.9,
+        "median": 254.6
+      },
+      "ground_speed_kt": {
+        "min": 422.9,
+        "max": 433.0,
+        "median": 428.4
+      },
+      "altitude_kinds": [
+        "geom_alt"
+      ],
+      "from_alamosa_reference": {
+        "n_with_geometry": 30,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 14.5,
+          "max": 350.0,
+          "median": 263.0
+        },
+        "el_deg": {
+          "min": 6.91,
+          "max": 46.09,
+          "median": 15.94
+        },
+        "range_km": {
+          "min": 13.0,
+          "max": 74.2,
+          "median": 36.4
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:05:23 MST",
+          "time_utc": "2026-11-22 03:05:23 UTC",
+          "az_deg": 350.0,
+          "el_deg": 46.09,
+          "range_km": 13.0,
+          "alt_ft": 38250,
+          "in_west": false,
+          "low_elev": false
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:05:23 MST",
+          "time_utc": "2026-11-22 03:05:23 UTC",
+          "az_deg": 350.0,
+          "el_deg": 46.09,
+          "range_km": 13.0,
+          "alt_ft": 38250,
+          "in_west": false,
+          "low_elev": false
+        }
+      },
+      "from_approx_observer_east_us160": {
+        "n_with_geometry": 30,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 2.7,
+          "max": 340.2,
+          "median": 264.3
+        },
+        "el_deg": {
+          "min": 6.33,
+          "max": 41.28,
+          "median": 15.69
+        },
+        "range_km": {
+          "min": 14.2,
+          "max": 80.3,
+          "median": 36.8
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:05:03 MST",
+          "time_utc": "2026-11-22 03:05:03 UTC",
+          "az_deg": 340.2,
+          "el_deg": 41.28,
+          "range_km": 14.2,
+          "alt_ft": 38250,
+          "in_west": false,
+          "low_elev": false
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:05:03 MST",
+          "time_utc": "2026-11-22 03:05:03 UTC",
+          "az_deg": 340.2,
+          "el_deg": 41.28,
+          "range_km": 14.2,
+          "alt_ft": 38250,
+          "in_west": false,
+          "low_elev": false
+        },
+        "any_near_junction_bearing_15deg": true,
+        "min_az_sep_from_junction_bearing_deg": 1.2,
+        "at_min_az_sep": {
+          "time_mst": "2026-11-21 20:07:21 MST",
+          "az_deg": 273.4,
+          "el_deg": 15.69,
+          "range_km": 34.3,
+          "alt_ft": 38225,
+          "in_west": true,
+          "low_elev": false
+        }
+      }
+    },
+    {
+      "hex": "ac0dd9",
+      "registration": "N876NN",
+      "type": "B738",
+      "type_desc": "BOEING 737-800",
+      "callsigns": [
+        "AAL1678"
+      ],
+      "dbFlags": 0,
+      "military_dbFlag": false,
+      "ladd_dbFlag": false,
+      "pia_dbFlag": false,
+      "non_icao_hex": false,
+      "position_sources": [
+        "adsb_icao"
+      ],
+      "mlat_only": false,
+      "mlat_present": false,
+      "squawks": [
+        "1315"
+      ],
+      "categories": [
+        "A3"
+      ],
+      "no_callsign": false,
+      "n_points_in_window_and_bbox": 24,
+      "time_first_mst": "2026-11-21 20:00:03 MST",
+      "time_last_mst": "2026-11-21 20:06:19 MST",
+      "time_first_utc": "2026-11-22 03:00:03 UTC",
+      "time_last_utc": "2026-11-22 03:06:19 UTC",
+      "duration_s": 375.7,
+      "altitude_ft": {
+        "min": 40300.0,
+        "max": 41350.0,
+        "median": 41300.0
+      },
+      "ground_track_deg": {
+        "min": 74.0,
+        "max": 77.5,
+        "median": 77.2
+      },
+      "ground_speed_kt": {
+        "min": 495.7,
+        "max": 511.0,
+        "median": 500.2
+      },
+      "altitude_kinds": [
+        "geom_alt"
+      ],
+      "from_alamosa_reference": {
+        "n_with_geometry": 24,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": false,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 91.7,
+          "max": 242.1,
+          "median": 205.8
+        },
+        "el_deg": {
+          "min": 10.35,
+          "max": 35.89,
+          "median": 18.8
+        },
+        "range_km": {
+          "min": 17.5,
+          "max": 54.3,
+          "median": 33.9
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:03:19 MST",
+          "time_utc": "2026-11-22 03:03:19 UTC",
+          "az_deg": 172.1,
+          "el_deg": 35.89,
+          "range_km": 17.5,
+          "alt_ft": 41325,
+          "in_west": false,
+          "low_elev": false
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:03:19 MST",
+          "time_utc": "2026-11-22 03:03:19 UTC",
+          "az_deg": 172.1,
+          "el_deg": 35.89,
+          "range_km": 17.5,
+          "alt_ft": 41325,
+          "in_west": false,
+          "low_elev": false
+        }
+      },
+      "from_approx_observer_east_us160": {
+        "n_with_geometry": 24,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 92.0,
+          "max": 245.0,
+          "median": 220.9
+        },
+        "el_deg": {
+          "min": 9.34,
+          "max": 38.86,
+          "median": 18.67
+        },
+        "range_km": {
+          "min": 16.4,
+          "max": 59.8,
+          "median": 32.6
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:03:41 MST",
+          "time_utc": "2026-11-22 03:03:41 UTC",
+          "az_deg": 174.6,
+          "el_deg": 38.86,
+          "range_km": 16.4,
+          "alt_ft": 41300,
+          "in_west": false,
+          "low_elev": false
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:03:41 MST",
+          "time_utc": "2026-11-22 03:03:41 UTC",
+          "az_deg": 174.6,
+          "el_deg": 38.86,
+          "range_km": 16.4,
+          "alt_ft": 41300,
+          "in_west": false,
+          "low_elev": false
+        },
+        "any_near_junction_bearing_15deg": false,
+        "min_az_sep_from_junction_bearing_deg": 29.6,
+        "at_min_az_sep": {
+          "time_mst": "2026-11-21 20:00:03 MST",
+          "az_deg": 245.0,
+          "el_deg": 9.34,
+          "range_km": 59.8,
+          "alt_ft": 40300,
+          "in_west": true,
+          "low_elev": true
+        }
+      }
+    },
+    {
+      "hex": "a9672c",
+      "registration": "N705AL",
+      "type": "B39M",
+      "type_desc": null,
+      "callsigns": [
+        "ASA375"
+      ],
+      "dbFlags": 0,
+      "military_dbFlag": false,
+      "ladd_dbFlag": false,
+      "pia_dbFlag": false,
+      "non_icao_hex": false,
+      "position_sources": [
+        "adsb_icao"
+      ],
+      "mlat_only": false,
+      "mlat_present": false,
+      "squawks": [
+        "6633"
+      ],
+      "categories": [
+        "A3"
+      ],
+      "no_callsign": false,
+      "n_points_in_window_and_bbox": 35,
+      "time_first_mst": "2026-11-21 20:10:09 MST",
+      "time_last_mst": "2026-11-21 20:19:03 MST",
+      "time_first_utc": "2026-11-22 03:10:09 UTC",
+      "time_last_utc": "2026-11-22 03:19:03 UTC",
+      "duration_s": 533.3,
+      "altitude_ft": {
+        "min": 33200.0,
+        "max": 35275.0,
+        "median": 35225.0
+      },
+      "ground_track_deg": {
+        "min": 131.7,
+        "max": 132.8,
+        "median": 132.3
+      },
+      "ground_speed_kt": {
+        "min": 490.7,
+        "max": 501.2,
+        "median": 494.8
+      },
+      "altitude_kinds": [
+        "geom_alt"
+      ],
+      "from_alamosa_reference": {
+        "n_with_geometry": 35,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 151.9,
+          "max": 299.0,
+          "median": 280.2
+        },
+        "el_deg": {
+          "min": 5.0,
+          "max": 23.38,
+          "median": 11.09
+        },
+        "range_km": {
+          "min": 21.2,
+          "max": 83.6,
+          "median": 43.0
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:15:25 MST",
+          "time_utc": "2026-11-22 03:15:25 UTC",
+          "az_deg": 223.9,
+          "el_deg": 23.38,
+          "range_km": 21.2,
+          "alt_ft": 35225,
+          "in_west": true,
+          "low_elev": false
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:15:25 MST",
+          "time_utc": "2026-11-22 03:15:25 UTC",
+          "az_deg": 223.9,
+          "el_deg": 23.38,
+          "range_km": 21.2,
+          "alt_ft": 35225,
+          "in_west": true,
+          "low_elev": false
+        }
+      },
+      "from_approx_observer_east_us160": {
+        "n_with_geometry": 35,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 157.6,
+          "max": 297.1,
+          "median": 278.7
+        },
+        "el_deg": {
+          "min": 4.64,
+          "max": 19.57,
+          "median": 9.93
+        },
+        "range_km": {
+          "min": 25.1,
+          "max": 89.0,
+          "median": 47.9
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:15:45 MST",
+          "time_utc": "2026-11-22 03:15:45 UTC",
+          "az_deg": 222.4,
+          "el_deg": 19.57,
+          "range_km": 25.1,
+          "alt_ft": 35250,
+          "in_west": true,
+          "low_elev": false
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:15:45 MST",
+          "time_utc": "2026-11-22 03:15:45 UTC",
+          "az_deg": 222.4,
+          "el_deg": 19.57,
+          "range_km": 25.1,
+          "alt_ft": 35250,
+          "in_west": true,
+          "low_elev": false
+        },
+        "any_near_junction_bearing_15deg": true,
+        "min_az_sep_from_junction_bearing_deg": 0.1,
+        "at_min_az_sep": {
+          "time_mst": "2026-11-21 20:13:46 MST",
+          "az_deg": 274.6,
+          "el_deg": 12.21,
+          "range_km": 39.4,
+          "alt_ft": 35225,
+          "in_west": true,
+          "low_elev": false
+        }
+      }
+    },
+    {
+      "hex": "ac79f8",
+      "registration": "N9027S",
+      "type": null,
+      "type_desc": null,
+      "callsigns": [
+        "SWA2220"
+      ],
+      "dbFlags": 0,
+      "military_dbFlag": false,
+      "ladd_dbFlag": false,
+      "pia_dbFlag": false,
+      "non_icao_hex": false,
+      "position_sources": [
+        "adsb_icao"
+      ],
+      "mlat_only": false,
+      "mlat_present": false,
+      "squawks": [
+        "0566"
+      ],
+      "categories": [
+        "A3"
+      ],
+      "no_callsign": false,
+      "n_points_in_window_and_bbox": 32,
+      "time_first_mst": "2026-11-21 20:03:31 MST",
+      "time_last_mst": "2026-11-21 20:13:28 MST",
+      "time_first_utc": "2026-11-22 03:03:31 UTC",
+      "time_last_utc": "2026-11-22 03:13:28 UTC",
+      "duration_s": 597.3,
+      "altitude_ft": {
+        "min": 36250.0,
+        "max": 36275.0,
+        "median": 36250.0
+      },
+      "ground_track_deg": {
+        "min": 277.5,
+        "max": 278.5,
+        "median": 278.0
+      },
+      "ground_speed_kt": {
+        "min": 389.9,
+        "max": 401.6,
+        "median": 399.5
+      },
+      "altitude_kinds": [
+        "geom_alt"
+      ],
+      "from_alamosa_reference": {
+        "n_with_geometry": 32,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 120.6,
+          "max": 260.6,
+          "median": 215.5
+        },
+        "el_deg": {
+          "min": 6.51,
+          "max": 21.69,
+          "median": 13.05
+        },
+        "range_km": {
+          "min": 23.6,
+          "max": 73.5,
+          "median": 40.2
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:07:46 MST",
+          "time_utc": "2026-11-22 03:07:46 UTC",
+          "az_deg": 185.8,
+          "el_deg": 21.69,
+          "range_km": 23.6,
+          "alt_ft": 36250,
+          "in_west": false,
+          "low_elev": false
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:07:46 MST",
+          "time_utc": "2026-11-22 03:07:46 UTC",
+          "az_deg": 185.8,
+          "el_deg": 21.69,
+          "range_km": 23.6,
+          "alt_ft": 36250,
+          "in_west": false,
+          "low_elev": false
+        }
+      },
+      "from_approx_observer_east_us160": {
+        "n_with_geometry": 32,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 124.1,
+          "max": 261.4,
+          "median": 225.6
+        },
+        "el_deg": {
+          "min": 5.96,
+          "max": 20.92,
+          "median": 12.81
+        },
+        "range_km": {
+          "min": 24.4,
+          "max": 79.6,
+          "median": 40.4
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:07:26 MST",
+          "time_utc": "2026-11-22 03:07:26 UTC",
+          "az_deg": 191.3,
+          "el_deg": 20.92,
+          "range_km": 24.4,
+          "alt_ft": 36250,
+          "in_west": false,
+          "low_elev": false
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:07:26 MST",
+          "time_utc": "2026-11-22 03:07:26 UTC",
+          "az_deg": 191.3,
+          "el_deg": 20.92,
+          "range_km": 24.4,
+          "alt_ft": 36250,
+          "in_west": false,
+          "low_elev": false
+        },
+        "any_near_junction_bearing_15deg": true,
+        "min_az_sep_from_junction_bearing_deg": 13.2,
+        "at_min_az_sep": {
+          "time_mst": "2026-11-21 20:13:28 MST",
+          "az_deg": 261.4,
+          "el_deg": 5.96,
+          "range_km": 79.6,
+          "alt_ft": 36250,
+          "in_west": true,
+          "low_elev": true
+        }
+      }
+    },
+    {
+      "hex": "a5fef4",
+      "registration": "N486AS",
+      "type": "B739",
+      "type_desc": "BOEING 737-900",
+      "callsigns": [
+        "ASA506"
+      ],
+      "dbFlags": 0,
+      "military_dbFlag": false,
+      "ladd_dbFlag": false,
+      "pia_dbFlag": false,
+      "non_icao_hex": false,
+      "position_sources": [
+        "adsb_icao"
+      ],
+      "mlat_only": false,
+      "mlat_present": false,
+      "squawks": [
+        "5626"
+      ],
+      "categories": [
+        "A3"
+      ],
+      "no_callsign": false,
+      "n_points_in_window_and_bbox": 36,
+      "time_first_mst": "2026-11-21 20:02:49 MST",
+      "time_last_mst": "2026-11-21 20:13:59 MST",
+      "time_first_utc": "2026-11-22 03:02:49 UTC",
+      "time_last_utc": "2026-11-22 03:13:59 UTC",
+      "duration_s": 670.1,
+      "altitude_ft": {
+        "min": 34175.0,
+        "max": 34250.0,
+        "median": 34200.0
+      },
+      "ground_track_deg": {
+        "min": 241.7,
+        "max": 242.8,
+        "median": 242.3
+      },
+      "ground_speed_kt": {
+        "min": 397.2,
+        "max": 411.9,
+        "median": 400.3
+      },
+      "altitude_kinds": [
+        "geom_alt"
+      ],
+      "from_alamosa_reference": {
+        "n_with_geometry": 36,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 5.4,
+          "max": 357.9,
+          "median": 266.2
+        },
+        "el_deg": {
+          "min": 6.0,
+          "max": 18.97,
+          "median": 10.62
+        },
+        "range_km": {
+          "min": 24.9,
+          "max": 73.8,
+          "median": 43.4
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:08:23 MST",
+          "time_utc": "2026-11-22 03:08:23 UTC",
+          "az_deg": 330.9,
+          "el_deg": 18.97,
+          "range_km": 24.9,
+          "alt_ft": 34200,
+          "in_west": false,
+          "low_elev": false
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:08:23 MST",
+          "time_utc": "2026-11-22 03:08:23 UTC",
+          "az_deg": 330.9,
+          "el_deg": 18.97,
+          "range_km": 24.9,
+          "alt_ft": 34200,
+          "in_west": false,
+          "low_elev": false
+        }
+      },
+      "from_approx_observer_east_us160": {
+        "n_with_geometry": 36,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 6.4,
+          "max": 359.9,
+          "median": 269.7
+        },
+        "el_deg": {
+          "min": 5.49,
+          "max": 16.98,
+          "median": 10.45
+        },
+        "range_km": {
+          "min": 27.6,
+          "max": 79.9,
+          "median": 46.8
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:07:45 MST",
+          "time_utc": "2026-11-22 03:07:45 UTC",
+          "az_deg": 336.2,
+          "el_deg": 16.98,
+          "range_km": 27.6,
+          "alt_ft": 34200,
+          "in_west": false,
+          "low_elev": false
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:07:45 MST",
+          "time_utc": "2026-11-22 03:07:45 UTC",
+          "az_deg": 336.2,
+          "el_deg": 16.98,
+          "range_km": 27.6,
+          "alt_ft": 34200,
+          "in_west": false,
+          "low_elev": false
+        },
+        "any_near_junction_bearing_15deg": true,
+        "min_az_sep_from_junction_bearing_deg": 0.6,
+        "at_min_az_sep": {
+          "time_mst": "2026-11-21 20:11:15 MST",
+          "az_deg": 275.1,
+          "el_deg": 9.25,
+          "range_km": 49.4,
+          "alt_ft": 34225,
+          "in_west": true,
+          "low_elev": true
+        }
+      }
+    },
+    {
+      "hex": "4077c4",
+      "registration": "G-FOMO",
+      "type": "GLEX",
+      "type_desc": "BOMBARDIER BD-700 Global 6000/6500",
+      "callsigns": [
+        "LNX12MO"
+      ],
+      "dbFlags": 8,
+      "military_dbFlag": false,
+      "ladd_dbFlag": true,
+      "pia_dbFlag": false,
+      "non_icao_hex": false,
+      "position_sources": [
+        "adsb_icao"
+      ],
+      "mlat_only": false,
+      "mlat_present": false,
+      "squawks": [
+        "6564"
+      ],
+      "categories": [
+        "A3"
+      ],
+      "no_callsign": false,
+      "n_points_in_window_and_bbox": 32,
+      "time_first_mst": "2026-11-21 20:08:06 MST",
+      "time_last_mst": "2026-11-21 20:18:17 MST",
+      "time_first_utc": "2026-11-22 03:08:06 UTC",
+      "time_last_utc": "2026-11-22 03:18:17 UTC",
+      "duration_s": 611.9,
+      "altitude_ft": {
+        "min": 43350.0,
+        "max": 43450.0,
+        "median": 43400.0
+      },
+      "ground_track_deg": {
+        "min": 241.8,
+        "max": 242.7,
+        "median": 242.3
+      },
+      "ground_speed_kt": {
+        "min": 425.8,
+        "max": 437.1,
+        "median": 432.5
+      },
+      "altitude_kinds": [
+        "geom_alt"
+      ],
+      "from_alamosa_reference": {
+        "n_with_geometry": 32,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 6.1,
+          "max": 358.2,
+          "median": 265.6
+        },
+        "el_deg": {
+          "min": 8.29,
+          "max": 24.79,
+          "median": 14.84
+        },
+        "range_km": {
+          "min": 26.0,
+          "max": 72.8,
+          "median": 45.1
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:13:22 MST",
+          "time_utc": "2026-11-22 03:13:22 UTC",
+          "az_deg": 328.0,
+          "el_deg": 24.79,
+          "range_km": 26.0,
+          "alt_ft": 43400,
+          "in_west": false,
+          "low_elev": false
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:13:22 MST",
+          "time_utc": "2026-11-22 03:13:22 UTC",
+          "az_deg": 328.0,
+          "el_deg": 24.79,
+          "range_km": 26.0,
+          "alt_ft": 43400,
+          "in_west": false,
+          "low_elev": false
+        }
+      },
+      "from_approx_observer_east_us160": {
+        "n_with_geometry": 32,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 1.4,
+          "max": 353.6,
+          "median": 267.7
+        },
+        "el_deg": {
+          "min": 7.64,
+          "max": 22.36,
+          "median": 14.17
+        },
+        "range_km": {
+          "min": 28.6,
+          "max": 78.7,
+          "median": 46.3
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:12:42 MST",
+          "time_utc": "2026-11-22 03:12:42 UTC",
+          "az_deg": 335.6,
+          "el_deg": 22.36,
+          "range_km": 28.6,
+          "alt_ft": 43375,
+          "in_west": false,
+          "low_elev": false
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:12:42 MST",
+          "time_utc": "2026-11-22 03:12:42 UTC",
+          "az_deg": 335.6,
+          "el_deg": 22.36,
+          "range_km": 28.6,
+          "alt_ft": 43375,
+          "in_west": false,
+          "low_elev": false
+        },
+        "any_near_junction_bearing_15deg": true,
+        "min_az_sep_from_junction_bearing_deg": 0.3,
+        "at_min_az_sep": {
+          "time_mst": "2026-11-21 20:16:00 MST",
+          "az_deg": 274.2,
+          "el_deg": 12.12,
+          "range_km": 51.2,
+          "alt_ft": 43425,
+          "in_west": true,
+          "low_elev": false
+        }
+      }
+    },
+    {
+      "hex": "aab18c",
+      "registration": "N7887A",
+      "type": "B737",
+      "type_desc": "BOEING 737-700",
+      "callsigns": [
+        "SWA4558"
+      ],
+      "dbFlags": 0,
+      "military_dbFlag": false,
+      "ladd_dbFlag": false,
+      "pia_dbFlag": false,
+      "non_icao_hex": false,
+      "position_sources": [
+        "adsb_icao"
+      ],
+      "mlat_only": false,
+      "mlat_present": false,
+      "squawks": [
+        "3550"
+      ],
+      "categories": [
+        "A3"
+      ],
+      "no_callsign": false,
+      "n_points_in_window_and_bbox": 9,
+      "time_first_mst": "2026-11-21 20:27:05 MST",
+      "time_last_mst": "2026-11-21 20:29:44 MST",
+      "time_first_utc": "2026-11-22 03:27:05 UTC",
+      "time_last_utc": "2026-11-22 03:29:44 UTC",
+      "duration_s": 158.2,
+      "altitude_ft": {
+        "min": 41250.0,
+        "max": 41300.0,
+        "median": 41275.0
+      },
+      "ground_track_deg": {
+        "min": 80.1,
+        "max": 80.5,
+        "median": 80.2
+      },
+      "ground_speed_kt": {
+        "min": 506.5,
+        "max": 508.3,
+        "median": 507.5
+      },
+      "altitude_kinds": [
+        "geom_alt"
+      ],
+      "from_alamosa_reference": {
+        "n_with_geometry": 9,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 234.9,
+          "max": 247.9,
+          "median": 243.6
+        },
+        "el_deg": {
+          "min": 7.02,
+          "max": 14.16,
+          "median": 9.54
+        },
+        "range_km": {
+          "min": 41.5,
+          "max": 80.1,
+          "median": 60.3
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:29:44 MST",
+          "time_utc": "2026-11-22 03:29:44 UTC",
+          "az_deg": 234.9,
+          "el_deg": 14.16,
+          "range_km": 41.5,
+          "alt_ft": 41275,
+          "in_west": true,
+          "low_elev": false
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:29:44 MST",
+          "time_utc": "2026-11-22 03:29:44 UTC",
+          "az_deg": 234.9,
+          "el_deg": 14.16,
+          "range_km": 41.5,
+          "alt_ft": 41275,
+          "in_west": true,
+          "low_elev": false
+        }
+      },
+      "from_approx_observer_east_us160": {
+        "n_with_geometry": 9,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 239.4,
+          "max": 249.5,
+          "median": 246.0
+        },
+        "el_deg": {
+          "min": 6.49,
+          "max": 12.55,
+          "median": 8.69
+        },
+        "range_km": {
+          "min": 46.6,
+          "max": 85.8,
+          "median": 65.9
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:29:44 MST",
+          "time_utc": "2026-11-22 03:29:44 UTC",
+          "az_deg": 239.4,
+          "el_deg": 12.55,
+          "range_km": 46.6,
+          "alt_ft": 41275,
+          "in_west": true,
+          "low_elev": false
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:29:44 MST",
+          "time_utc": "2026-11-22 03:29:44 UTC",
+          "az_deg": 239.4,
+          "el_deg": 12.55,
+          "range_km": 46.6,
+          "alt_ft": 41275,
+          "in_west": true,
+          "low_elev": false
+        },
+        "any_near_junction_bearing_15deg": false,
+        "min_az_sep_from_junction_bearing_deg": 25.0,
+        "at_min_az_sep": {
+          "time_mst": "2026-11-21 20:27:05 MST",
+          "az_deg": 249.5,
+          "el_deg": 6.49,
+          "range_km": 85.8,
+          "alt_ft": 41250,
+          "in_west": true,
+          "low_elev": true
+        }
+      }
+    },
+    {
+      "hex": "ab7ae4",
+      "registration": "N839MH",
+      "type": "B764",
+      "type_desc": "BOEING 767-400",
+      "callsigns": [
+        "DAL353"
+      ],
+      "dbFlags": 0,
+      "military_dbFlag": false,
+      "ladd_dbFlag": false,
+      "pia_dbFlag": false,
+      "non_icao_hex": false,
+      "position_sources": [
+        "adsb_icao"
+      ],
+      "mlat_only": false,
+      "mlat_present": false,
+      "squawks": [
+        "3311"
+      ],
+      "categories": [
+        "A5"
+      ],
+      "no_callsign": false,
+      "n_points_in_window_and_bbox": 13,
+      "time_first_mst": "2026-11-21 20:00:15 MST",
+      "time_last_mst": "2026-11-21 20:04:11 MST",
+      "time_first_utc": "2026-11-22 03:00:15 UTC",
+      "time_last_utc": "2026-11-22 03:04:11 UTC",
+      "duration_s": 236.4,
+      "altitude_ft": {
+        "min": 36225.0,
+        "max": 36250.0,
+        "median": 36250.0
+      },
+      "ground_track_deg": {
+        "min": 249.5,
+        "max": 249.9,
+        "median": 249.7
+      },
+      "ground_speed_kt": {
+        "min": 406.6,
+        "max": 410.7,
+        "median": 409.4
+      },
+      "altitude_kinds": [
+        "geom_alt"
+      ],
+      "from_alamosa_reference": {
+        "n_with_geometry": 13,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 285.9,
+          "max": 326.1,
+          "median": 300.8
+        },
+        "el_deg": {
+          "min": 6.34,
+          "max": 10.76,
+          "median": 8.53
+        },
+        "range_km": {
+          "min": 46.0,
+          "max": 75.3,
+          "median": 57.2
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:00:15 MST",
+          "time_utc": "2026-11-22 03:00:15 UTC",
+          "az_deg": 326.1,
+          "el_deg": 10.76,
+          "range_km": 46.0,
+          "alt_ft": 36250,
+          "in_west": false,
+          "low_elev": false
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:00:15 MST",
+          "time_utc": "2026-11-22 03:00:15 UTC",
+          "az_deg": 326.1,
+          "el_deg": 10.76,
+          "range_km": 46.0,
+          "alt_ft": 36250,
+          "in_west": false,
+          "low_elev": false
+        }
+      },
+      "from_approx_observer_east_us160": {
+        "n_with_geometry": 13,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 284.8,
+          "max": 320.1,
+          "median": 297.9
+        },
+        "el_deg": {
+          "min": 5.82,
+          "max": 9.92,
+          "median": 7.75
+        },
+        "range_km": {
+          "min": 49.7,
+          "max": 81.2,
+          "median": 62.6
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:00:15 MST",
+          "time_utc": "2026-11-22 03:00:15 UTC",
+          "az_deg": 320.1,
+          "el_deg": 9.92,
+          "range_km": 49.7,
+          "alt_ft": 36250,
+          "in_west": false,
+          "low_elev": true
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:00:15 MST",
+          "time_utc": "2026-11-22 03:00:15 UTC",
+          "az_deg": 320.1,
+          "el_deg": 9.92,
+          "range_km": 49.7,
+          "alt_ft": 36250,
+          "in_west": false,
+          "low_elev": true
+        },
+        "any_near_junction_bearing_15deg": true,
+        "min_az_sep_from_junction_bearing_deg": 10.2,
+        "at_min_az_sep": {
+          "time_mst": "2026-11-21 20:04:11 MST",
+          "az_deg": 284.8,
+          "el_deg": 5.82,
+          "range_km": 81.2,
+          "alt_ft": 36250,
+          "in_west": true,
+          "low_elev": true
+        }
+      }
+    },
+    {
+      "hex": "a8fdb4",
+      "registration": "N679FR",
+      "type": null,
+      "type_desc": null,
+      "callsigns": [
+        "FFT4765"
+      ],
+      "dbFlags": 0,
+      "military_dbFlag": false,
+      "ladd_dbFlag": false,
+      "pia_dbFlag": false,
+      "non_icao_hex": false,
+      "position_sources": [
+        "adsb_icao"
+      ],
+      "mlat_only": false,
+      "mlat_present": false,
+      "squawks": [
+        "3256"
+      ],
+      "categories": [
+        "A3"
+      ],
+      "no_callsign": false,
+      "n_points_in_window_and_bbox": 9,
+      "time_first_mst": "2026-11-21 20:00:05 MST",
+      "time_last_mst": "2026-11-21 20:02:26 MST",
+      "time_first_utc": "2026-11-22 03:00:05 UTC",
+      "time_last_utc": "2026-11-22 03:02:26 UTC",
+      "duration_s": 141.8,
+      "altitude_ft": {
+        "min": 34200.0,
+        "max": 34225.0,
+        "median": 34225.0
+      },
+      "ground_track_deg": {
+        "min": 224.9,
+        "max": 225.2,
+        "median": 225.1
+      },
+      "ground_speed_kt": {
+        "min": 416.5,
+        "max": 418.6,
+        "median": 417.9
+      },
+      "altitude_kinds": [
+        "geom_alt"
+      ],
+      "from_alamosa_reference": {
+        "n_with_geometry": 9,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 254.6,
+          "max": 271.2,
+          "median": 262.1
+        },
+        "el_deg": {
+          "min": 5.75,
+          "max": 8.7,
+          "median": 7.18
+        },
+        "range_km": {
+          "min": 52.4,
+          "max": 76.6,
+          "median": 62.6
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:00:05 MST",
+          "time_utc": "2026-11-22 03:00:05 UTC",
+          "az_deg": 271.2,
+          "el_deg": 8.7,
+          "range_km": 52.4,
+          "alt_ft": 34225,
+          "in_west": true,
+          "low_elev": true
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:00:05 MST",
+          "time_utc": "2026-11-22 03:00:05 UTC",
+          "az_deg": 271.2,
+          "el_deg": 8.7,
+          "range_km": 52.4,
+          "alt_ft": 34225,
+          "in_west": true,
+          "low_elev": true
+        }
+      },
+      "from_approx_observer_east_us160": {
+        "n_with_geometry": 9,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 255.8,
+          "max": 271.1,
+          "median": 262.9
+        },
+        "el_deg": {
+          "min": 5.28,
+          "max": 7.73,
+          "median": 6.49
+        },
+        "range_km": {
+          "min": 58.5,
+          "max": 82.5,
+          "median": 68.7
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:00:05 MST",
+          "time_utc": "2026-11-22 03:00:05 UTC",
+          "az_deg": 271.1,
+          "el_deg": 7.73,
+          "range_km": 58.5,
+          "alt_ft": 34225,
+          "in_west": true,
+          "low_elev": true
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:00:05 MST",
+          "time_utc": "2026-11-22 03:00:05 UTC",
+          "az_deg": 271.1,
+          "el_deg": 7.73,
+          "range_km": 58.5,
+          "alt_ft": 34225,
+          "in_west": true,
+          "low_elev": true
+        },
+        "any_near_junction_bearing_15deg": true,
+        "min_az_sep_from_junction_bearing_deg": 3.4,
+        "at_min_az_sep": {
+          "time_mst": "2026-11-21 20:00:05 MST",
+          "az_deg": 271.1,
+          "el_deg": 7.73,
+          "range_km": 58.5,
+          "alt_ft": 34225,
+          "in_west": true,
+          "low_elev": true
+        }
+      }
+    },
+    {
+      "hex": "ab9e12",
+      "registration": "N848FD",
+      "type": "B77L",
+      "type_desc": "BOEING 777-200LR",
+      "callsigns": [
+        "FDX5928"
+      ],
+      "dbFlags": 0,
+      "military_dbFlag": false,
+      "ladd_dbFlag": false,
+      "pia_dbFlag": false,
+      "non_icao_hex": false,
+      "position_sources": [
+        "adsb_icao"
+      ],
+      "mlat_only": false,
+      "mlat_present": false,
+      "squawks": [
+        "1421"
+      ],
+      "categories": [
+        "A5"
+      ],
+      "no_callsign": false,
+      "n_points_in_window_and_bbox": 10,
+      "time_first_mst": "2026-11-21 20:26:58 MST",
+      "time_last_mst": "2026-11-21 20:29:56 MST",
+      "time_first_utc": "2026-11-22 03:26:58 UTC",
+      "time_last_utc": "2026-11-22 03:29:56 UTC",
+      "duration_s": 177.5,
+      "altitude_ft": {
+        "min": 35150.0,
+        "max": 35200.0,
+        "median": 35175.0
+      },
+      "ground_track_deg": {
+        "min": 95.0,
+        "max": 95.4,
+        "median": 95.1
+      },
+      "ground_speed_kt": {
+        "min": 519.0,
+        "max": 527.3,
+        "median": 522.0
+      },
+      "altitude_kinds": [
+        "geom_alt"
+      ],
+      "from_alamosa_reference": {
+        "n_with_geometry": 10,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 304.6,
+          "max": 331.2,
+          "median": 315.7
+        },
+        "el_deg": {
+          "min": 5.06,
+          "max": 8.97,
+          "median": 6.91
+        },
+        "range_km": {
+          "min": 52.6,
+          "max": 88.6,
+          "median": 71.1
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:29:56 MST",
+          "time_utc": "2026-11-22 03:29:56 UTC",
+          "az_deg": 331.2,
+          "el_deg": 8.97,
+          "range_km": 52.6,
+          "alt_ft": 35175,
+          "in_west": false,
+          "low_elev": true
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:29:56 MST",
+          "time_utc": "2026-11-22 03:29:56 UTC",
+          "az_deg": 331.2,
+          "el_deg": 8.97,
+          "range_km": 52.6,
+          "alt_ft": 35175,
+          "in_west": false,
+          "low_elev": true
+        }
+      },
+      "from_approx_observer_east_us160": {
+        "n_with_geometry": 10,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 302.5,
+          "max": 325.6,
+          "median": 312.1
+        },
+        "el_deg": {
+          "min": 4.74,
+          "max": 8.43,
+          "median": 6.44
+        },
+        "range_km": {
+          "min": 55.8,
+          "max": 93.7,
+          "median": 75.7
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:29:56 MST",
+          "time_utc": "2026-11-22 03:29:56 UTC",
+          "az_deg": 325.6,
+          "el_deg": 8.43,
+          "range_km": 55.8,
+          "alt_ft": 35175,
+          "in_west": false,
+          "low_elev": true
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:29:56 MST",
+          "time_utc": "2026-11-22 03:29:56 UTC",
+          "az_deg": 325.6,
+          "el_deg": 8.43,
+          "range_km": 55.8,
+          "alt_ft": 35175,
+          "in_west": false,
+          "low_elev": true
+        },
+        "any_near_junction_bearing_15deg": false,
+        "min_az_sep_from_junction_bearing_deg": 27.9,
+        "at_min_az_sep": {
+          "time_mst": "2026-11-21 20:26:58 MST",
+          "az_deg": 302.5,
+          "el_deg": 4.74,
+          "range_km": 93.7,
+          "alt_ft": 35200,
+          "in_west": true,
+          "low_elev": true
+        }
+      }
+    },
+    {
+      "hex": "a3d90a",
+      "registration": "N347TT",
+      "type": "B38M",
+      "type_desc": "BOEING 737 MAX 8",
+      "callsigns": [
+        "AAL2539"
+      ],
+      "dbFlags": 0,
+      "military_dbFlag": false,
+      "ladd_dbFlag": false,
+      "pia_dbFlag": false,
+      "non_icao_hex": false,
+      "position_sources": [
+        "adsb_icao"
+      ],
+      "mlat_only": false,
+      "mlat_present": false,
+      "squawks": [
+        "6663"
+      ],
+      "categories": [
+        "A3"
+      ],
+      "no_callsign": false,
+      "n_points_in_window_and_bbox": 33,
+      "time_first_mst": "2026-11-21 20:15:15 MST",
+      "time_last_mst": "2026-11-21 20:25:44 MST",
+      "time_first_utc": "2026-11-22 03:15:15 UTC",
+      "time_last_utc": "2026-11-22 03:25:44 UTC",
+      "duration_s": 628.8,
+      "altitude_ft": {
+        "min": 36150.0,
+        "max": 36200.0,
+        "median": 36150.0
+      },
+      "ground_track_deg": {
+        "min": 248.1,
+        "max": 249.2,
+        "median": 248.7
+      },
+      "ground_speed_kt": {
+        "min": 384.2,
+        "max": 402.1,
+        "median": 397.6
+      },
+      "altitude_kinds": [
+        "geom_alt"
+      ],
+      "from_alamosa_reference": {
+        "n_with_geometry": 33,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 3.3,
+          "max": 359.9,
+          "median": 304.2
+        },
+        "el_deg": {
+          "min": 4.77,
+          "max": 8.15,
+          "median": 7.03
+        },
+        "range_km": {
+          "min": 59.7,
+          "max": 96.2,
+          "median": 68.3
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:21:30 MST",
+          "time_utc": "2026-11-22 03:21:30 UTC",
+          "az_deg": 337.6,
+          "el_deg": 8.15,
+          "range_km": 59.7,
+          "alt_ft": 36200,
+          "in_west": false,
+          "low_elev": true
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:21:30 MST",
+          "time_utc": "2026-11-22 03:21:30 UTC",
+          "az_deg": 337.6,
+          "el_deg": 8.15,
+          "range_km": 59.7,
+          "alt_ft": 36200,
+          "in_west": false,
+          "low_elev": true
+        }
+      },
+      "from_approx_observer_east_us160": {
+        "n_with_geometry": 33,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 1.1,
+          "max": 357.8,
+          "median": 303.8
+        },
+        "el_deg": {
+          "min": 4.95,
+          "max": 7.83,
+          "median": 6.82
+        },
+        "range_km": {
+          "min": 61.9,
+          "max": 93.2,
+          "median": 70.2
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:20:51 MST",
+          "time_utc": "2026-11-22 03:20:51 UTC",
+          "az_deg": 339.7,
+          "el_deg": 7.83,
+          "range_km": 61.9,
+          "alt_ft": 36175,
+          "in_west": false,
+          "low_elev": true
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:20:51 MST",
+          "time_utc": "2026-11-22 03:20:51 UTC",
+          "az_deg": 339.7,
+          "el_deg": 7.83,
+          "range_km": 61.9,
+          "alt_ft": 36175,
+          "in_west": false,
+          "low_elev": true
+        },
+        "any_near_junction_bearing_15deg": false,
+        "min_az_sep_from_junction_bearing_deg": 20.8,
+        "at_min_az_sep": {
+          "time_mst": "2026-11-21 20:25:44 MST",
+          "az_deg": 295.3,
+          "el_deg": 5.52,
+          "range_km": 84.9,
+          "alt_ft": 36175,
+          "in_west": true,
+          "low_elev": true
+        }
+      }
+    },
+    {
+      "hex": "a3965c",
+      "registration": "N330FR",
+      "type": "A20N",
+      "type_desc": "AIRBUS A-320neo",
+      "callsigns": [
+        "FFT4418"
+      ],
+      "dbFlags": 0,
+      "military_dbFlag": false,
+      "ladd_dbFlag": false,
+      "pia_dbFlag": false,
+      "non_icao_hex": false,
+      "position_sources": [
+        "adsb_icao"
+      ],
+      "mlat_only": false,
+      "mlat_present": false,
+      "squawks": [
+        "0721"
+      ],
+      "categories": [
+        "A3"
+      ],
+      "no_callsign": false,
+      "n_points_in_window_and_bbox": 27,
+      "time_first_mst": "2026-11-21 20:21:52 MST",
+      "time_last_mst": "2026-11-21 20:29:58 MST",
+      "time_first_utc": "2026-11-22 03:21:52 UTC",
+      "time_last_utc": "2026-11-22 03:29:58 UTC",
+      "duration_s": 486.0,
+      "altitude_ft": {
+        "min": 33150.0,
+        "max": 33275.0,
+        "median": 33225.0
+      },
+      "ground_track_deg": {
+        "min": 12.6,
+        "max": 13.1,
+        "median": 12.7
+      },
+      "ground_speed_kt": {
+        "min": 450.2,
+        "max": 460.2,
+        "median": 457.1
+      },
+      "altitude_kinds": [
+        "geom_alt"
+      ],
+      "from_alamosa_reference": {
+        "n_with_geometry": 27,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 238.9,
+          "max": 324.9,
+          "median": 282.0
+        },
+        "el_deg": {
+          "min": 4.87,
+          "max": 7.04,
+          "median": 6.24
+        },
+        "range_km": {
+          "min": 61.5,
+          "max": 85.6,
+          "median": 68.6
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:26:00 MST",
+          "time_utc": "2026-11-22 03:26:00 UTC",
+          "az_deg": 282.0,
+          "el_deg": 7.04,
+          "range_km": 61.5,
+          "alt_ft": 33225,
+          "in_west": true,
+          "low_elev": true
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:26:00 MST",
+          "time_utc": "2026-11-22 03:26:00 UTC",
+          "az_deg": 282.0,
+          "el_deg": 7.04,
+          "range_km": 61.5,
+          "alt_ft": 33225,
+          "in_west": true,
+          "low_elev": true
+        }
+      },
+      "from_approx_observer_east_us160": {
+        "n_with_geometry": 27,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 240.9,
+          "max": 321.5,
+          "median": 281.0
+        },
+        "el_deg": {
+          "min": 4.54,
+          "max": 6.36,
+          "median": 5.78
+        },
+        "range_km": {
+          "min": 67.5,
+          "max": 91.0,
+          "median": 73.7
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:26:00 MST",
+          "time_utc": "2026-11-22 03:26:00 UTC",
+          "az_deg": 281.0,
+          "el_deg": 6.36,
+          "range_km": 67.5,
+          "alt_ft": 33225,
+          "in_west": true,
+          "low_elev": true
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:26:00 MST",
+          "time_utc": "2026-11-22 03:26:00 UTC",
+          "az_deg": 281.0,
+          "el_deg": 6.36,
+          "range_km": 67.5,
+          "alt_ft": 33225,
+          "in_west": true,
+          "low_elev": true
+        },
+        "any_near_junction_bearing_15deg": true,
+        "min_az_sep_from_junction_bearing_deg": 0.8,
+        "at_min_az_sep": {
+          "time_mst": "2026-11-21 20:25:24 MST",
+          "az_deg": 273.8,
+          "el_deg": 6.27,
+          "range_km": 68.4,
+          "alt_ft": 33250,
+          "in_west": true,
+          "low_elev": true
+        }
+      }
+    },
+    {
+      "hex": "ac4801",
+      "registration": "N8902Q",
+      "type": "B38M",
+      "type_desc": "BOEING 737 MAX 8",
+      "callsigns": [
+        "SWA2203"
+      ],
+      "dbFlags": 0,
+      "military_dbFlag": false,
+      "ladd_dbFlag": false,
+      "pia_dbFlag": false,
+      "non_icao_hex": false,
+      "position_sources": [
+        "adsb_icao"
+      ],
+      "mlat_only": false,
+      "mlat_present": false,
+      "squawks": [
+        "2121"
+      ],
+      "categories": [
+        "A3"
+      ],
+      "no_callsign": false,
+      "n_points_in_window_and_bbox": 4,
+      "time_first_mst": "2026-11-21 20:00:00 MST",
+      "time_last_mst": "2026-11-21 20:00:59 MST",
+      "time_first_utc": "2026-11-22 03:00:00 UTC",
+      "time_last_utc": "2026-11-22 03:00:59 UTC",
+      "duration_s": 59.7,
+      "altitude_ft": {
+        "min": 36250.0,
+        "max": 36275.0,
+        "median": 36275.0
+      },
+      "ground_track_deg": {
+        "min": 242.4,
+        "max": 242.6,
+        "median": 242.6
+      },
+      "ground_speed_kt": {
+        "min": 392.7,
+        "max": 394.5,
+        "median": 393.1
+      },
+      "altitude_kinds": [
+        "geom_alt"
+      ],
+      "from_alamosa_reference": {
+        "n_with_geometry": 4,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 258.7,
+          "max": 261.7,
+          "median": 260.5
+        },
+        "el_deg": {
+          "min": 6.43,
+          "max": 7.71,
+          "median": 7.23
+        },
+        "range_km": {
+          "min": 62.9,
+          "max": 74.4,
+          "median": 70.5
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:00:00 MST",
+          "time_utc": "2026-11-22 03:00:00 UTC",
+          "az_deg": 261.7,
+          "el_deg": 7.71,
+          "range_km": 62.9,
+          "alt_ft": 36250,
+          "in_west": true,
+          "low_elev": true
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:00:00 MST",
+          "time_utc": "2026-11-22 03:00:00 UTC",
+          "az_deg": 261.7,
+          "el_deg": 7.71,
+          "range_km": 62.9,
+          "alt_ft": 36250,
+          "in_west": true,
+          "low_elev": true
+        }
+      },
+      "from_approx_observer_east_us160": {
+        "n_with_geometry": 4,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 259.6,
+          "max": 262.5,
+          "median": 261.4
+        },
+        "el_deg": {
+          "min": 5.89,
+          "max": 6.97,
+          "median": 6.57
+        },
+        "range_km": {
+          "min": 69.0,
+          "max": 80.5,
+          "median": 76.6
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:00:00 MST",
+          "time_utc": "2026-11-22 03:00:00 UTC",
+          "az_deg": 262.5,
+          "el_deg": 6.97,
+          "range_km": 69.0,
+          "alt_ft": 36250,
+          "in_west": true,
+          "low_elev": true
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:00:00 MST",
+          "time_utc": "2026-11-22 03:00:00 UTC",
+          "az_deg": 262.5,
+          "el_deg": 6.97,
+          "range_km": 69.0,
+          "alt_ft": 36250,
+          "in_west": true,
+          "low_elev": true
+        },
+        "any_near_junction_bearing_15deg": true,
+        "min_az_sep_from_junction_bearing_deg": 12.1,
+        "at_min_az_sep": {
+          "time_mst": "2026-11-21 20:00:00 MST",
+          "az_deg": 262.5,
+          "el_deg": 6.97,
+          "range_km": 69.0,
+          "alt_ft": 36250,
+          "in_west": true,
+          "low_elev": true
+        }
+      }
+    },
+    {
+      "hex": "a789bc",
+      "registration": "N585NW",
+      "type": "B753",
+      "type_desc": "BOEING 757-300",
+      "callsigns": [
+        "DAL2274"
+      ],
+      "dbFlags": 0,
+      "military_dbFlag": false,
+      "ladd_dbFlag": false,
+      "pia_dbFlag": false,
+      "non_icao_hex": false,
+      "position_sources": [
+        "adsb_icao"
+      ],
+      "mlat_only": false,
+      "mlat_present": false,
+      "squawks": [
+        "0773"
+      ],
+      "categories": [
+        "A4"
+      ],
+      "no_callsign": false,
+      "n_points_in_window_and_bbox": 17,
+      "time_first_mst": "2026-11-21 20:24:18 MST",
+      "time_last_mst": "2026-11-21 20:29:32 MST",
+      "time_first_utc": "2026-11-22 03:24:18 UTC",
+      "time_last_utc": "2026-11-22 03:29:32 UTC",
+      "duration_s": 314.6,
+      "altitude_ft": {
+        "min": 35175.0,
+        "max": 35225.0,
+        "median": 35200.0
+      },
+      "ground_track_deg": {
+        "min": 47.2,
+        "max": 47.7,
+        "median": 47.4
+      },
+      "ground_speed_kt": {
+        "min": 484.8,
+        "max": 491.1,
+        "median": 486.3
+      },
+      "altitude_kinds": [
+        "geom_alt"
+      ],
+      "from_alamosa_reference": {
+        "n_with_geometry": 17,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 298.6,
+          "max": 352.1,
+          "median": 327.2
+        },
+        "el_deg": {
+          "min": 4.78,
+          "max": 5.95,
+          "median": 5.71
+        },
+        "range_km": {
+          "min": 76.9,
+          "max": 92.9,
+          "median": 79.9
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:25:55 MST",
+          "time_utc": "2026-11-22 03:25:55 UTC",
+          "az_deg": 316.3,
+          "el_deg": 5.95,
+          "range_km": 76.9,
+          "alt_ft": 35200,
+          "in_west": true,
+          "low_elev": true
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:25:55 MST",
+          "time_utc": "2026-11-22 03:25:55 UTC",
+          "az_deg": 316.3,
+          "el_deg": 5.95,
+          "range_km": 76.9,
+          "alt_ft": 35200,
+          "in_west": true,
+          "low_elev": true
+        }
+      },
+      "from_approx_observer_east_us160": {
+        "n_with_geometry": 17,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 296.7,
+          "max": 348.4,
+          "median": 323.6
+        },
+        "el_deg": {
+          "min": 4.72,
+          "max": 5.61,
+          "median": 5.41
+        },
+        "range_km": {
+          "min": 81.0,
+          "max": 94.0,
+          "median": 83.8
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:26:15 MST",
+          "time_utc": "2026-11-22 03:26:15 UTC",
+          "az_deg": 316.6,
+          "el_deg": 5.61,
+          "range_km": 81.0,
+          "alt_ft": 35200,
+          "in_west": true,
+          "low_elev": true
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:26:15 MST",
+          "time_utc": "2026-11-22 03:26:15 UTC",
+          "az_deg": 316.6,
+          "el_deg": 5.61,
+          "range_km": 81.0,
+          "alt_ft": 35200,
+          "in_west": true,
+          "low_elev": true
+        },
+        "any_near_junction_bearing_15deg": false,
+        "min_az_sep_from_junction_bearing_deg": 22.2,
+        "at_min_az_sep": {
+          "time_mst": "2026-11-21 20:24:18 MST",
+          "az_deg": 296.7,
+          "el_deg": 5.19,
+          "range_km": 86.7,
+          "alt_ft": 35225,
+          "in_west": true,
+          "low_elev": true
+        }
+      }
+    },
+    {
+      "hex": "ab24f7",
+      "registration": "N817SK",
+      "type": "CRJ9",
+      "type_desc": "BOMBARDIER Regional Jet CRJ-900",
+      "callsigns": [
+        "SKW9924"
+      ],
+      "dbFlags": 0,
+      "military_dbFlag": false,
+      "ladd_dbFlag": false,
+      "pia_dbFlag": false,
+      "non_icao_hex": false,
+      "position_sources": [
+        "adsb_icao"
+      ],
+      "mlat_only": false,
+      "mlat_present": false,
+      "squawks": [
+        "6042"
+      ],
+      "categories": [
+        "A3"
+      ],
+      "no_callsign": false,
+      "n_points_in_window_and_bbox": 12,
+      "time_first_mst": "2026-11-21 20:00:17 MST",
+      "time_last_mst": "2026-11-21 20:03:53 MST",
+      "time_first_utc": "2026-11-22 03:00:17 UTC",
+      "time_last_utc": "2026-11-22 03:03:53 UTC",
+      "duration_s": 216.0,
+      "altitude_ft": {
+        "min": 37200.0,
+        "max": 37300.0,
+        "median": 37275.0
+      },
+      "ground_track_deg": {
+        "min": 120.8,
+        "max": 121.7,
+        "median": 121.3
+      },
+      "ground_speed_kt": {
+        "min": 478.2,
+        "max": 486.4,
+        "median": 485.5
+      },
+      "altitude_kinds": [
+        "geom_alt"
+      ],
+      "from_alamosa_reference": {
+        "n_with_geometry": 12,
+        "any_in_west_az_200_320": false,
+        "any_in_west_and_low_elev_lt_10": false,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 129.2,
+          "max": 164.7,
+          "median": 135.9
+        },
+        "el_deg": {
+          "min": 7.8,
+          "max": 34.65,
+          "median": 14.31
+        },
+        "range_km": {
+          "min": 15.9,
+          "max": 64.5,
+          "median": 40.8
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:00:17 MST",
+          "time_utc": "2026-11-22 03:00:17 UTC",
+          "az_deg": 164.7,
+          "el_deg": 34.65,
+          "range_km": 15.9,
+          "alt_ft": 37225,
+          "in_west": false,
+          "low_elev": false
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:00:17 MST",
+          "time_utc": "2026-11-22 03:00:17 UTC",
+          "az_deg": 164.7,
+          "el_deg": 34.65,
+          "range_km": 15.9,
+          "alt_ft": 37225,
+          "in_west": false,
+          "low_elev": false
+        }
+      },
+      "from_approx_observer_east_us160": {
+        "n_with_geometry": 12,
+        "any_in_west_az_200_320": false,
+        "any_in_west_and_low_elev_lt_10": false,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 133.1,
+          "max": 192.4,
+          "median": 144.2
+        },
+        "el_deg": {
+          "min": 8.45,
+          "max": 34.98,
+          "median": 16.09
+        },
+        "range_km": {
+          "min": 15.8,
+          "max": 59.8,
+          "median": 36.7
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:00:17 MST",
+          "time_utc": "2026-11-22 03:00:17 UTC",
+          "az_deg": 192.4,
+          "el_deg": 34.98,
+          "range_km": 15.8,
+          "alt_ft": 37225,
+          "in_west": false,
+          "low_elev": false
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:00:17 MST",
+          "time_utc": "2026-11-22 03:00:17 UTC",
+          "az_deg": 192.4,
+          "el_deg": 34.98,
+          "range_km": 15.8,
+          "alt_ft": 37225,
+          "in_west": false,
+          "low_elev": false
+        },
+        "any_near_junction_bearing_15deg": false,
+        "min_az_sep_from_junction_bearing_deg": 82.1,
+        "at_min_az_sep": {
+          "time_mst": "2026-11-21 20:00:17 MST",
+          "az_deg": 192.4,
+          "el_deg": 34.98,
+          "range_km": 15.8,
+          "alt_ft": 37225,
+          "in_west": false,
+          "low_elev": false
+        }
+      }
+    },
+    {
+      "hex": "a9c2de",
+      "registration": "N728SK",
+      "type": "CRJ7",
+      "type_desc": "BOMBARDIER Regional Jet CRJ-700",
+      "callsigns": [
+        "SKW6421"
+      ],
+      "dbFlags": 0,
+      "military_dbFlag": false,
+      "ladd_dbFlag": false,
+      "pia_dbFlag": false,
+      "non_icao_hex": false,
+      "position_sources": [
+        "adsb_icao"
+      ],
+      "mlat_only": false,
+      "mlat_present": false,
+      "squawks": [
+        "2203"
+      ],
+      "categories": [
+        "A2"
+      ],
+      "no_callsign": false,
+      "n_points_in_window_and_bbox": 14,
+      "time_first_mst": "2026-11-21 20:25:37 MST",
+      "time_last_mst": "2026-11-21 20:29:53 MST",
+      "time_first_utc": "2026-11-22 03:25:37 UTC",
+      "time_last_utc": "2026-11-22 03:29:53 UTC",
+      "duration_s": 256.0,
+      "altitude_ft": {
+        "min": 36275.0,
+        "max": 36350.0,
+        "median": 36275.0
+      },
+      "ground_track_deg": {
+        "min": 305.5,
+        "max": 306.0,
+        "median": 305.6
+      },
+      "ground_speed_kt": {
+        "min": 387.9,
+        "max": 407.7,
+        "median": 395.7
+      },
+      "altitude_kinds": [
+        "geom_alt"
+      ],
+      "from_alamosa_reference": {
+        "n_with_geometry": 14,
+        "any_in_west_az_200_320": false,
+        "any_in_west_and_low_elev_lt_10": false,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 141.8,
+          "max": 185.7,
+          "median": 153.5
+        },
+        "el_deg": {
+          "min": 7.36,
+          "max": 22.51,
+          "median": 12.52
+        },
+        "range_km": {
+          "min": 22.8,
+          "max": 65.9,
+          "median": 43.4
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:29:53 MST",
+          "time_utc": "2026-11-22 03:29:53 UTC",
+          "az_deg": 185.7,
+          "el_deg": 22.51,
+          "range_km": 22.8,
+          "alt_ft": 36275,
+          "in_west": false,
+          "low_elev": false
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:29:53 MST",
+          "time_utc": "2026-11-22 03:29:53 UTC",
+          "az_deg": 185.7,
+          "el_deg": 22.51,
+          "range_km": 22.8,
+          "alt_ft": 36275,
+          "in_west": false,
+          "low_elev": false
+        }
+      },
+      "from_approx_observer_east_us160": {
+        "n_with_geometry": 14,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": false,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 146.3,
+          "max": 201.6,
+          "median": 162.3
+        },
+        "el_deg": {
+          "min": 7.83,
+          "max": 21.16,
+          "median": 13.32
+        },
+        "range_km": {
+          "min": 24.2,
+          "max": 62.3,
+          "median": 40.8
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:29:53 MST",
+          "time_utc": "2026-11-22 03:29:53 UTC",
+          "az_deg": 201.6,
+          "el_deg": 21.16,
+          "range_km": 24.2,
+          "alt_ft": 36275,
+          "in_west": true,
+          "low_elev": false
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:29:53 MST",
+          "time_utc": "2026-11-22 03:29:53 UTC",
+          "az_deg": 201.6,
+          "el_deg": 21.16,
+          "range_km": 24.2,
+          "alt_ft": 36275,
+          "in_west": true,
+          "low_elev": false
+        },
+        "any_near_junction_bearing_15deg": false,
+        "min_az_sep_from_junction_bearing_deg": 72.9,
+        "at_min_az_sep": {
+          "time_mst": "2026-11-21 20:29:53 MST",
+          "az_deg": 201.6,
+          "el_deg": 21.16,
+          "range_km": 24.2,
+          "alt_ft": 36275,
+          "in_west": true,
+          "low_elev": false
+        }
+      }
+    },
+    {
+      "hex": "a1272d",
+      "registration": "N17331",
+      "type": "B38M",
+      "type_desc": "BOEING 737 MAX 8",
+      "callsigns": [
+        "UAL484"
+      ],
+      "dbFlags": 0,
+      "military_dbFlag": false,
+      "ladd_dbFlag": false,
+      "pia_dbFlag": false,
+      "non_icao_hex": false,
+      "position_sources": [
+        "adsb_icao"
+      ],
+      "mlat_only": false,
+      "mlat_present": false,
+      "squawks": [
+        "1420"
+      ],
+      "categories": [
+        "A3"
+      ],
+      "no_callsign": false,
+      "n_points_in_window_and_bbox": 28,
+      "time_first_mst": "2026-11-21 20:12:27 MST",
+      "time_last_mst": "2026-11-21 20:20:37 MST",
+      "time_first_utc": "2026-11-22 03:12:27 UTC",
+      "time_last_utc": "2026-11-22 03:20:37 UTC",
+      "duration_s": 489.9,
+      "altitude_ft": {
+        "min": 32225.0,
+        "max": 32300.0,
+        "median": 32250.0
+      },
+      "ground_track_deg": {
+        "min": 201.1,
+        "max": 208.0,
+        "median": 207.7
+      },
+      "ground_speed_kt": {
+        "min": 443.7,
+        "max": 456.5,
+        "median": 446.9
+      },
+      "altitude_kinds": [
+        "geom_alt"
+      ],
+      "from_alamosa_reference": {
+        "n_with_geometry": 28,
+        "any_in_west_az_200_320": false,
+        "any_in_west_and_low_elev_lt_10": false,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 45.8,
+          "max": 182.5,
+          "median": 92.8
+        },
+        "el_deg": {
+          "min": 5.89,
+          "max": 18.85,
+          "median": 11.61
+        },
+        "range_km": {
+          "min": 23.2,
+          "max": 69.6,
+          "median": 40.1
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:17:08 MST",
+          "time_utc": "2026-11-22 03:17:08 UTC",
+          "az_deg": 114.7,
+          "el_deg": 18.85,
+          "range_km": 23.2,
+          "alt_ft": 32250,
+          "in_west": false,
+          "low_elev": false
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:17:08 MST",
+          "time_utc": "2026-11-22 03:17:08 UTC",
+          "az_deg": 114.7,
+          "el_deg": 18.85,
+          "range_km": 23.2,
+          "alt_ft": 32250,
+          "in_west": false,
+          "low_elev": false
+        }
+      },
+      "from_approx_observer_east_us160": {
+        "n_with_geometry": 28,
+        "any_in_west_az_200_320": false,
+        "any_in_west_and_low_elev_lt_10": false,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 42.0,
+          "max": 189.3,
+          "median": 93.7
+        },
+        "el_deg": {
+          "min": 6.32,
+          "max": 24.45,
+          "median": 12.29
+        },
+        "range_km": {
+          "min": 18.1,
+          "max": 65.4,
+          "median": 36.5
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:17:08 MST",
+          "time_utc": "2026-11-22 03:17:08 UTC",
+          "az_deg": 123.8,
+          "el_deg": 24.45,
+          "range_km": 18.1,
+          "alt_ft": 32250,
+          "in_west": false,
+          "low_elev": false
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:17:08 MST",
+          "time_utc": "2026-11-22 03:17:08 UTC",
+          "az_deg": 123.8,
+          "el_deg": 24.45,
+          "range_km": 18.1,
+          "alt_ft": 32250,
+          "in_west": false,
+          "low_elev": false
+        },
+        "any_near_junction_bearing_15deg": false,
+        "min_az_sep_from_junction_bearing_deg": 85.2,
+        "at_min_az_sep": {
+          "time_mst": "2026-11-21 20:20:37 MST",
+          "az_deg": 189.3,
+          "el_deg": 7.98,
+          "range_km": 52.8,
+          "alt_ft": 32300,
+          "in_west": false,
+          "low_elev": true
+        }
+      }
+    },
+    {
+      "hex": "a1515b",
+      "registration": "N184US",
+      "type": "A321",
+      "type_desc": "AIRBUS A-321",
+      "callsigns": [
+        "AAL2148"
+      ],
+      "dbFlags": 0,
+      "military_dbFlag": false,
+      "ladd_dbFlag": false,
+      "pia_dbFlag": false,
+      "non_icao_hex": false,
+      "position_sources": [
+        "adsb_icao"
+      ],
+      "mlat_only": false,
+      "mlat_present": false,
+      "squawks": [
+        "2666"
+      ],
+      "categories": [
+        "A3"
+      ],
+      "no_callsign": false,
+      "n_points_in_window_and_bbox": 9,
+      "time_first_mst": "2026-11-21 20:00:07 MST",
+      "time_last_mst": "2026-11-21 20:02:45 MST",
+      "time_first_utc": "2026-11-22 03:00:07 UTC",
+      "time_last_utc": "2026-11-22 03:02:45 UTC",
+      "duration_s": 158.0,
+      "altitude_ft": {
+        "min": 37100.0,
+        "max": 37175.0,
+        "median": 37150.0
+      },
+      "ground_track_deg": {
+        "min": 57.3,
+        "max": 57.5,
+        "median": 57.4
+      },
+      "ground_speed_kt": {
+        "min": 495.2,
+        "max": 502.7,
+        "median": 497.4
+      },
+      "altitude_kinds": [
+        "geom_alt"
+      ],
+      "from_alamosa_reference": {
+        "n_with_geometry": 9,
+        "any_in_west_az_200_320": false,
+        "any_in_west_and_low_elev_lt_10": false,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 35.7,
+          "max": 48.8,
+          "median": 45.1
+        },
+        "el_deg": {
+          "min": 7.57,
+          "max": 19.12,
+          "median": 11.1
+        },
+        "range_km": {
+          "min": 27.4,
+          "max": 65.8,
+          "median": 46.1
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:00:07 MST",
+          "time_utc": "2026-11-22 03:00:07 UTC",
+          "az_deg": 35.7,
+          "el_deg": 19.12,
+          "range_km": 27.4,
+          "alt_ft": 37150,
+          "in_west": false,
+          "low_elev": false
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:00:07 MST",
+          "time_utc": "2026-11-22 03:00:07 UTC",
+          "az_deg": 35.7,
+          "el_deg": 19.12,
+          "range_km": 27.4,
+          "alt_ft": 37150,
+          "in_west": false,
+          "low_elev": false
+        }
+      },
+      "from_approx_observer_east_us160": {
+        "n_with_geometry": 9,
+        "any_in_west_az_200_320": false,
+        "any_in_west_and_low_elev_lt_10": false,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 23.0,
+          "max": 45.0,
+          "median": 39.0
+        },
+        "el_deg": {
+          "min": 8.17,
+          "max": 21.49,
+          "median": 12.23
+        },
+        "range_km": {
+          "min": 24.5,
+          "max": 61.3,
+          "median": 42.0
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:00:07 MST",
+          "time_utc": "2026-11-22 03:00:07 UTC",
+          "az_deg": 23.0,
+          "el_deg": 21.49,
+          "range_km": 24.5,
+          "alt_ft": 37150,
+          "in_west": false,
+          "low_elev": false
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:00:07 MST",
+          "time_utc": "2026-11-22 03:00:07 UTC",
+          "az_deg": 23.0,
+          "el_deg": 21.49,
+          "range_km": 24.5,
+          "alt_ft": 37150,
+          "in_west": false,
+          "low_elev": false
+        },
+        "any_near_junction_bearing_15deg": false,
+        "min_az_sep_from_junction_bearing_deg": 108.5,
+        "at_min_az_sep": {
+          "time_mst": "2026-11-21 20:00:07 MST",
+          "az_deg": 23.0,
+          "el_deg": 21.49,
+          "range_km": 24.5,
+          "alt_ft": 37150,
+          "in_west": false,
+          "low_elev": false
+        }
+      }
+    },
+    {
+      "hex": "a84a7b",
+      "registration": "N633SK",
+      "type": "CRJ7",
+      "type_desc": "BOMBARDIER Regional Jet CRJ-700",
+      "callsigns": [
+        "SKW6477"
+      ],
+      "dbFlags": 0,
+      "military_dbFlag": false,
+      "ladd_dbFlag": false,
+      "pia_dbFlag": false,
+      "non_icao_hex": false,
+      "position_sources": [
+        "adsb_icao"
+      ],
+      "mlat_only": false,
+      "mlat_present": false,
+      "squawks": [
+        "3440"
+      ],
+      "categories": [
+        "A2"
+      ],
+      "no_callsign": false,
+      "n_points_in_window_and_bbox": 27,
+      "time_first_mst": "2026-11-21 20:06:26 MST",
+      "time_last_mst": "2026-11-21 20:12:51 MST",
+      "time_first_utc": "2026-11-22 03:06:26 UTC",
+      "time_last_utc": "2026-11-22 03:12:51 UTC",
+      "duration_s": 385.7,
+      "altitude_ft": {
+        "min": 24750.0,
+        "max": 28025.0,
+        "median": 27200.0
+      },
+      "ground_track_deg": {
+        "min": 309.8,
+        "max": 329.6,
+        "median": 313.6
+      },
+      "ground_speed_kt": {
+        "min": 379.9,
+        "max": 408.1,
+        "median": 396.1
+      },
+      "altitude_kinds": [
+        "geom_alt"
+      ],
+      "from_alamosa_reference": {
+        "n_with_geometry": 27,
+        "any_in_west_az_200_320": false,
+        "any_in_west_and_low_elev_lt_10": false,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 0.5,
+          "max": 359.5,
+          "median": 17.0
+        },
+        "el_deg": {
+          "min": 2.87,
+          "max": 5.63,
+          "median": 4.74
+        },
+        "range_km": {
+          "min": 59.3,
+          "max": 91.7,
+          "median": 68.1
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:07:45 MST",
+          "time_utc": "2026-11-22 03:07:45 UTC",
+          "az_deg": 39.1,
+          "el_deg": 5.58,
+          "range_km": 59.3,
+          "alt_ft": 27350,
+          "in_west": false,
+          "low_elev": true
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:07:05 MST",
+          "time_utc": "2026-11-22 03:07:05 UTC",
+          "az_deg": 46.9,
+          "el_deg": 5.63,
+          "range_km": 59.8,
+          "alt_ft": 27700,
+          "in_west": false,
+          "low_elev": true
+        }
+      },
+      "from_approx_observer_east_us160": {
+        "n_with_geometry": 27,
+        "any_in_west_az_200_320": false,
+        "any_in_west_and_low_elev_lt_10": false,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 0.3,
+          "max": 359.4,
+          "median": 26.0
+        },
+        "el_deg": {
+          "min": 2.85,
+          "max": 6.13,
+          "median": 4.8
+        },
+        "range_km": {
+          "min": 55.4,
+          "max": 92.1,
+          "median": 67.2
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:07:25 MST",
+          "time_utc": "2026-11-22 03:07:25 UTC",
+          "az_deg": 38.3,
+          "el_deg": 6.07,
+          "range_km": 55.4,
+          "alt_ft": 27525,
+          "in_west": false,
+          "low_elev": true
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:06:45 MST",
+          "time_utc": "2026-11-22 03:06:45 UTC",
+          "az_deg": 46.8,
+          "el_deg": 6.13,
+          "range_km": 55.8,
+          "alt_ft": 27875,
+          "in_west": false,
+          "low_elev": true
+        },
+        "any_near_junction_bearing_15deg": false,
+        "min_az_sep_from_junction_bearing_deg": 79.3,
+        "at_min_az_sep": {
+          "time_mst": "2026-11-21 20:12:51 MST",
+          "az_deg": 353.9,
+          "el_deg": 2.85,
+          "range_km": 92.1,
+          "alt_ft": 24750,
+          "in_west": false,
+          "low_elev": true
+        }
+      }
+    },
+    {
+      "hex": "a178de",
+      "registration": "N194UW",
+      "type": "A321",
+      "type_desc": "AIRBUS A-321",
+      "callsigns": [],
+      "dbFlags": 0,
+      "military_dbFlag": false,
+      "ladd_dbFlag": false,
+      "pia_dbFlag": false,
+      "non_icao_hex": false,
+      "position_sources": [
+        "adsb_icao"
+      ],
+      "mlat_only": false,
+      "mlat_present": false,
+      "squawks": [],
+      "categories": [],
+      "no_callsign": true,
+      "n_points_in_window_and_bbox": 1,
+      "time_first_mst": "2026-11-21 20:18:58 MST",
+      "time_last_mst": "2026-11-21 20:18:58 MST",
+      "time_first_utc": "2026-11-22 03:18:58 UTC",
+      "time_last_utc": "2026-11-22 03:18:58 UTC",
+      "duration_s": 0.0,
+      "altitude_ft": {
+        "min": 30275.0,
+        "max": 30275.0,
+        "median": 30275.0
+      },
+      "ground_track_deg": {
+        "min": 247.3,
+        "max": 247.3,
+        "median": 247.3
+      },
+      "ground_speed_kt": {
+        "min": 422.7,
+        "max": 422.7,
+        "median": 422.7
+      },
+      "altitude_kinds": [
+        "geom_alt"
+      ],
+      "from_alamosa_reference": {
+        "n_with_geometry": 1,
+        "any_in_west_az_200_320": false,
+        "any_in_west_and_low_elev_lt_10": false,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 322.1,
+          "max": 322.1,
+          "median": 322.1
+        },
+        "el_deg": {
+          "min": 2.88,
+          "max": 2.88,
+          "median": 2.88
+        },
+        "range_km": {
+          "min": 116.6,
+          "max": 116.6,
+          "median": 116.6
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:18:58 MST",
+          "time_utc": "2026-11-22 03:18:58 UTC",
+          "az_deg": 322.1,
+          "el_deg": 2.88,
+          "range_km": 116.6,
+          "alt_ft": 30275,
+          "in_west": false,
+          "low_elev": true
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:18:58 MST",
+          "time_utc": "2026-11-22 03:18:58 UTC",
+          "az_deg": 322.1,
+          "el_deg": 2.88,
+          "range_km": 116.6,
+          "alt_ft": 30275,
+          "in_west": false,
+          "low_elev": true
+        }
+      },
+      "from_approx_observer_east_us160": {
+        "n_with_geometry": 1,
+        "any_in_west_az_200_320": true,
+        "any_in_west_and_low_elev_lt_10": true,
+        "any_above_horizon": true,
+        "az_deg": {
+          "min": 319.8,
+          "max": 319.8,
+          "median": 319.8
+        },
+        "el_deg": {
+          "min": 2.76,
+          "max": 2.76,
+          "median": 2.76
+        },
+        "range_km": {
+          "min": 120.5,
+          "max": 120.5,
+          "median": 120.5
+        },
+        "closest": {
+          "time_mst": "2026-11-21 20:18:58 MST",
+          "time_utc": "2026-11-22 03:18:58 UTC",
+          "az_deg": 319.8,
+          "el_deg": 2.76,
+          "range_km": 120.5,
+          "alt_ft": 30275,
+          "in_west": true,
+          "low_elev": true
+        },
+        "highest_elevation": {
+          "time_mst": "2026-11-21 20:18:58 MST",
+          "time_utc": "2026-11-22 03:18:58 UTC",
+          "az_deg": 319.8,
+          "el_deg": 2.76,
+          "range_km": 120.5,
+          "alt_ft": 30275,
+          "in_west": true,
+          "low_elev": true
+        },
+        "any_near_junction_bearing_15deg": false,
+        "min_az_sep_from_junction_bearing_deg": 45.3,
+        "at_min_az_sep": {
+          "time_mst": "2026-11-21 20:18:58 MST",
+          "az_deg": 319.8,
+          "el_deg": 2.76,
+          "range_km": 120.5,
+          "alt_ft": 30275,
+          "in_west": true,
+          "low_elev": true
+        }
+      }
+    }
+  ]
+}
