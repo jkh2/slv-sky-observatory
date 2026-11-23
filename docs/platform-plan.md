@@ -1,6 +1,6 @@
 # Platform plan and decision status
 
-This page maps candidate services to the [architecture](architecture.md) and [roadmap](roadmap.md). It is a proposal for contributors, not a claim that accounts, deployments, service contracts, or integrations already exist. The [public portal source](../site/) is in this repository, with a [GitHub Pages workflow](../.github/workflows/pages.yml) for publication from `main`. The first deployment awaits the repository Pages setting; an earlier ChatGPT-hosted preview is separate. The reporting app and resident have not been deployed.
+This page maps candidate services to the [architecture](architecture.md) and [roadmap](roadmap.md). It is a proposal for contributors, not a claim that accounts, deployments, service contracts, or integrations already exist. The [public portal](https://jameskeithharwood.com/slv-sky-observatory/) is live on GitHub Pages from [source in this repository](../site/) through the [Pages workflow](../.github/workflows/pages.yml). The reporting app and resident have not been deployed.
 
 ## Proposed placement
 
@@ -36,7 +36,7 @@ A local data center does not by itself make a cloud-hosted app reachable during 
 
 ## Open decisions
 
-- Vercel versus another host for the app; whether the existing portal remains on Sites long term.
+- Vercel versus another host for the interactive app; the entry portal currently remains on GitHub Pages.
 - Supabase managed versus self-hosted Postgres/identity/storage, including backup and export requirements.
 - Which documents should enter retrieval and which must stay private; pgvector versus Chroma only after evaluation.
 - VPS provider and resource needs for Codex CLI and Ollama; Strata service availability and operational terms.
