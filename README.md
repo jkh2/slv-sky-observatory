@@ -2,7 +2,7 @@
 
 An open-source, community-led project to document and investigate unusual sky sightings in the San Luis Valley, Colorado. We combine witness reports, historical records, and permitted public data. A persistent AI resident will help people examine evidence and ask better questions. Portable sensor pods can add synchronized observations when funding allows.
 
-**Status:** the [public entry portal](https://slv-sky-observatory.orionsentinelai.chatgpt.site) is live. The reporting app and resident are in development; no public reporting service is operating yet. [Contribute](CONTRIBUTING.md) by discussing the design or taking an issue.
+**Status:** the entry page source is [site/index.html](site/index.html), with a [GitHub Pages workflow](.github/workflows/pages.yml) publishing `site/` from `main`. GitHub Pages awaits the repository's Pages setting (Source: GitHub Actions) before its first successful deployment. The [earlier ChatGPT-hosted preview](https://slv-sky-observatory.orionsentinelai.chatgpt.site) remains available meanwhile. The reporting app and resident are in development; no public reporting service is operating yet. [Contribute](CONTRIBUTING.md) by discussing the design or taking an issue.
 
 ## What we are building
 
@@ -17,7 +17,7 @@ A pin marks the observer's location, **not a measured object location**. A sight
 
 `site/` contains the static entry portal with separate observer and builder onboarding. `docs/architecture.md` describes components and boundaries. `docs/evidence-policy.md` defines how reports and conclusions are handled. `docs/roadmap.md` gives the first milestones. `docs/platform-plan.md` maps the proposed Vercel, Supabase, Chroma, Obsidian, Discord, VPS, and potential Strata roles, with decision status and implementation gates. `docs/source-inventory.md` tracks candidate public sources and reuse from [Eagle Eyes Global](https://github.com/jkh2/Eagle-Eyes-Global). `schemas/report.schema.json` is an initial draft of the report contract.
 
-We are starting with documentation and issue-sized implementation. The app and resident services will be added as working vertical slices; directories will appear when they contain code.
+[Platform decision issue #14](https://github.com/jkh2/slv-sky-observatory/issues/14) covers the first synthetic hosting and storage spike. We are starting with documentation and issue-sized implementation. The app and resident services will be added as working vertical slices; directories will appear when they contain code.
 
 ## Participate
 
