@@ -2,7 +2,7 @@
 
 An open-source, community-led project to document and investigate unusual sky sightings in the San Luis Valley, Colorado. We combine witness reports, historical records, and permitted public data. A persistent AI resident will help people examine evidence and ask better questions. Portable sensor pods can add synchronized observations when funding allows.
 
-**Status:** the entry page source is [site/index.html](site/index.html), with a [GitHub Pages workflow](.github/workflows/pages.yml) publishing `site/` from `main`. GitHub Pages awaits the repository's Pages setting (Source: GitHub Actions) before its first successful deployment. The [earlier ChatGPT-hosted preview](https://slv-sky-observatory.orionsentinelai.chatgpt.site) remains available meanwhile. The reporting app and resident are in development; no public reporting service is operating yet. [Contribute](CONTRIBUTING.md) by discussing the design or taking an issue.
+**Status:** the [public entry portal](https://jameskeithharwood.com/slv-sky-observatory/) is live on GitHub Pages. Its source is [site/index.html](site/index.html), published from `main` by the [Pages workflow](.github/workflows/pages.yml). The reporting app and resident are in development; no public reporting service is operating yet. [Contribute](CONTRIBUTING.md) by discussing the design or taking an issue.
 
 ## What we are building
 
