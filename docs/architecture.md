@@ -28,12 +28,16 @@ Use a database with geospatial indexing for structured reports and cases, and co
 
 The VPS Home, app API, database/object store, and optional pods are distinct deployable units. Authenticate service-to-service calls, use scoped credentials, back up the Home and evidence stores, and queue work during outages. A local Ollama model on the VPS does not by itself make the public app available when valley connectivity is lost; offline field capture is a separate future requirement.
 
+## Platform placement and portability
+
+The [platform plan](platform-plan.md) maps candidate hosting, identity, spatial storage, retrieval, resident Home, knowledge vault, and community integrations to these boundaries. Supabase is a preferred MVP candidate for case data, auth, and private media; Vercel is a candidate for the interactive app; neither is provisioned here. The case API and versioned migrations should keep the core portable. Chroma and Obsidian are optional resident/knowledge tools, not authoritative evidence stores. Discord, if used, receives only deliberately public updates. Strata Zone 1 is a potential future local host subject to actual service availability and operational review.
+
 ## Open design questions
 
-- Exact hosting/database and media storage choices.
+- App hosting, database/media provider, backup/restore, and exit portability; see [platform plan](platform-plan.md).
 - Provider-specific OAuth setup and account linking.
 - Permissions and retention choices for witness data.
 - Access to historical flight positions and Enigma data under their terms.
 - Pod sensor protocol, cost, field power, calibration, and site selection.
 
-See [roadmap](roadmap.md), [evidence policy](evidence-policy.md), and [source inventory](source-inventory.md).
+See [roadmap](roadmap.md), [platform plan](platform-plan.md), [evidence policy](evidence-policy.md), and [source inventory](source-inventory.md).

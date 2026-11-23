@@ -15,7 +15,7 @@ A pin marks the observer's location, **not a measured object location**. A sight
 
 ## Project layout
 
-`site/` contains the static entry portal with separate observer and builder onboarding. `docs/architecture.md` describes components and boundaries. `docs/evidence-policy.md` defines how reports and conclusions are handled. `docs/roadmap.md` gives the first milestones. `docs/source-inventory.md` tracks candidate public sources and reuse from [Eagle Eyes Global](https://github.com/jkh2/Eagle-Eyes-Global). `schemas/report.schema.json` is an initial draft of the report contract.
+`site/` contains the static entry portal with separate observer and builder onboarding. `docs/architecture.md` describes components and boundaries. `docs/evidence-policy.md` defines how reports and conclusions are handled. `docs/roadmap.md` gives the first milestones. `docs/platform-plan.md` maps the proposed Vercel, Supabase, Chroma, Obsidian, Discord, VPS, and potential Strata roles, with decision status and implementation gates. `docs/source-inventory.md` tracks candidate public sources and reuse from [Eagle Eyes Global](https://github.com/jkh2/Eagle-Eyes-Global). `schemas/report.schema.json` is an initial draft of the report contract.
 
 We are starting with documentation and issue-sized implementation. The app and resident services will be added as working vertical slices; directories will appear when they contain code.
 
