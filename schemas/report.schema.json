@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/jkh2/slv-sky-observatory/blob/main/schemas/report.schema.json",
+  "title": "Witness sighting intake (draft, private server-side record)",
+  "description": "An initial contract for new witness submissions. The server assigns case and report IDs, stores original media separately, and derives a privacy-safe public projection.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "observedAt",
+    "timeAccuracyMinutes",
+    "observedFrom",
+    "description",
+    "visibility",
+    "contactConsent"
+  ],
+  "properties": {
+    "observedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "UTC observation time, not submission time."
+    },
+    "timeAccuracyMinutes": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Witness estimate of plus/minus uncertainty in the time."
+    },
+    "originalLocalTime": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "Original time wording to preserve timezone or ambiguity."
+    },
+    "durationSeconds": {
+      "type": "number",
+      "minimum": 0
+    },
+    "observedFrom": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "latitude",
+        "longitude"
+      ],
+      "properties": {
+        "latitude": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "accuracyMeters": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "description": "Private location where witness observed the event, not object position."
+    },
+    "bearingDegrees": {
+      "type": "number",
+      "minimum": 0,
+      "exclusiveMaximum": 360,
+      "description": "Approximate direction from observer, clockwise from true north."
+    },
+    "elevationDegrees": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 90,
+      "description": "Approximate angle above horizon."
+    },
+    "apparentPath": {
+      "type": "array",
+      "maxItems": 50,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "bearingDegrees",
+          "elevationDegrees"
+        ],
+        "properties": {
+          "bearingDegrees": {
+            "type": "number",
+            "minimum": 0,
+            "exclusiveMaximum": 360
+          },
+          "elevationDegrees": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 90
+          },
+          "secondsAfterStart": {
+            "type": "number",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "mediaUploadIds": {
+      "type": "array",
+      "maxItems": 20,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 128
+      },
+      "description": "Server-issued references to original uploaded files, never public URLs."
+    },
+    "visibility": {
+      "enum": [
+        "private",
+        "approximate_public",
+        "exact_public"
+      ],
+      "description": "Only exact_public explicitly allows public precise observer location."
+    },
+    "contactConsent": {
+      "type": "boolean",
+      "description": "Whether investigators may contact witness through the app."
+    }
+  }
+}
